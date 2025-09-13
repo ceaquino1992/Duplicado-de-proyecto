@@ -1,0 +1,571 @@
+/* FUENTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+/* COMIENZO DEL NAV */
+
+/* header {
+    display: flex;
+    width: 100%;
+    background-color: #000;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header div .fa-solid,.fa-bars {
+    display: none;
+    color: #e9ce9f;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+}
+
+.menu ul li {
+    padding: 5px;
+    border-right: 2px solid #e9ce9f;
+}
+
+.menu ul li:last-child{
+    border: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #e9ce9f;
+    text-transform: uppercase;
+}
+
+.menu ul li:hover a {
+    background-color: #e9ce9f;
+    padding: 5px;
+    color: #000;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.content-marca {
+    display: flex;
+    width: 55%;
+    justify-content: start;
+    align-items: center;
+}
+
+.content-marca p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #e9ce9f;
+}
+*/
+
+header .navbar{
+    background-color: #000000 !important;
+    
+}
+
+.navbar ul li a{
+    color: #e9ce9f !important;
+    font-weight: 600 !important;
+    font-size: 1em !important;
+    text-transform: uppercase !important;
+    margin: 3px !important;
+    border-radius: 10px !important;
+}
+
+.navbar ul li a:hover{
+    color: #000000 !important;
+    background-color: #e9ce9f !important;
+    border-radius: 10px !important;
+    transition: all 0.5s !important;
+}
+
+.navbar .dropdown-menu{
+    padding: 10px 10px !important;
+    background-color: #000000 !important;
+}
+
+.navbar .dropdown-menu .dropdown-item{
+    margin: 0px !important;
+}
+
+header nav .logo-marca {
+    width: 80px;
+    height: 80px;
+}
+
+.navbar .navbar-toggler
+{
+    color: #e9ce9f !important;
+}
+
+/* FIN DEL NAV */
+
+/* COMIENZO DE SECTION HERO */
+
+.section-hero {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    background-image: url(../img/fondo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.section-hero .content-hero {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 30px;
+    width: 500px;
+    height: 350px;
+    margin: 30px;
+    padding: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.content-hero p {
+    font-weight: 600;
+}
+
+.content-hero a {
+    width: 160px;
+    color: #000000;
+    font-weight: 600;
+    border: 1px solid black;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.content-hero a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.content-logo .logo {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}
+
+/* FIN DE SECTION HERO */
+
+/* INICIO BANNER CENTRAL */
+
+/* .banner-central {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+} */
+
+.banner-central h2 {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 200;
+}
+
+.banner-central h2 span {
+    font-weight: 600;
+}
+
+/* FIN DE BANNER CENTRAL */
+
+/* INICIO DE SECCION SECUNDARIA */
+
+main .section-secundaria {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    background-image: url(../img/salon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-secundaria h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+}
+
+.section-secundaria h2 span {
+    font-weight: 200;
+}
+
+.section-secundaria p, h3 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.section-secundaria .content-servicios {
+    display: flex;
+    width: 80%;
+    margin-bottom: 10px;
+    align-content: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.content-servicios .nuestros-servicios {
+    display: flex;
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 20px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nuestros-servicios img {
+    width: 90%;
+    border-radius: 20px;
+}
+
+.nuestros-servicios p{
+    font-size: 1em;
+}
+.nuestros-servicios h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.nuestros-servicios a {
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.section-secundaria .nuestros-servicios a:hover {
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #000000;
+}
+
+/* COMIENDO DEL PIE DE PAGINA */
+
+.pie-pagina {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: #e9ce9f;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pie-pagina .content-icon {
+    display: flex;
+    width: 361px;
+    height: 100%;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.pie-pagina .content-icon a span,
+.fa-brands,.fa-facebook,
+.fa-brands,.fa-instagram,
+.fa-brands,.fa-x-twitter,
+.fa-brands,.fa-youtube {
+    font-size: 28px;
+    color: #e9ce9f;
+}
+
+.pie-pagina .content-central {
+    display: flex;
+    width: 361px;
+    flex-direction: column;
+    align-content: center;
+}
+
+.content-central p {
+    font-size: 12px;
+    color: #e9ce9f;
+    margin-top: 20px;
+}
+
+.content-central .mapa-pie {
+    width: 90%;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.content-central h3 {
+    text-align: center;
+    font-weight: 200;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #e9ce9f;
+}
+
+.pie-pagina .content-menu-footer {
+    width: 360px;
+    text-align: center;
+}
+
+.content-menu-footer ul {
+    width: 100%;
+    padding: 20px;
+    list-style: none;
+}
+
+.content-menu-footer ul li{
+    padding: 3px;
+}
+
+.content-menu-footer ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 3px 5px;
+    color: #e9ce9f;
+    text-transform: uppercase;
+}
+
+.content-menu-footer ul li a:hover{
+    border-bottom: 3px solid #e9ce9f;
+    border-radius: 10px;
+}
+/* FIN DEL PIE DE PAGINA */
+
+/* NOSOTROS */
+
+.content-all {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    background-image: url("../img/fondo2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.nosotros-text {
+    width: 600px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.content-all .content-photo {
+    width: 600px;
+    overflow: hidden;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+/* FIN DE NOSOTROS */
+
+/* INICIO DE SERVICIOS */
+
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../img/fondo2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+.content-serv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    width: 300px;
+    height: 550px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 20px;
+}
+
+.content-serv span {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.content-serv img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/* FIN DE SERVICIOS */
+
+/* INICIO DE CURSOS */
+
+.cursos .content-cursos {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+}
+
+.content-cursos img {
+    width: 250px;
+}
+
+/* FIN DE CURSOS */
+
+/* INICIO CONTACTO */
+
+.section-contacto {
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/fondo2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 50px;
+}
+
+.content-form form {
+    display: flex;
+    width: 360px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content-form form .caja-texto {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* MEDIA QUERY */
+
+/* @media screen and (max-width: 985px) {
+    header {
+        display: flex;
+        width: 100%;
+        background-color: #000;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-marca {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+} */
+
+@media screen and (max-width:490px) {
+
+    /* .menu {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    header div .fa-solid,
+    .fa-bars {
+        display: inline-block;
+    } */
+
+    .content-hero {
+        padding: 5px;
+    }
+
+    .content-hero {
+        font-size: 12px;
+    }
+
+    .content-logo .logo {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+
+    .banner-central{
+        height: 200px;
+    }
+
+    .banner-central h2 {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 200;
+    }
+
+    .section-secundaria h2 {
+        font-size: 24px;
+    }
+
+    .section-secundaria p{
+        font-size: 12px;
+    }
+
+    .content-servicios .nuestros-servicios {
+        font-size: 12px;
+    }
+
+    .pie-pagina{
+        font-size: 12px;
+    }
+    .pie-pagina .content-central{
+        width: 80%;
+    }
+}
