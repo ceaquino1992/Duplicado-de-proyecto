@@ -14,29 +14,29 @@ header .navbar{
     
 }
 
-.navbar ul li a{
-    color: #e9ce9f !important;
-    font-weight: 600 !important;
-    font-size: 1em !important;
-    text-transform: uppercase !important;
-    margin: 3px !important;
-    border-radius: 10px !important;
+.navbar-nav li a{
+    color: #e9ce9f;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 3px;
+    border-radius: 10px;
 }
 
-.navbar ul li a:hover{
-    color: #000000 !important;
-    background-color: #e9ce9f !important;
-    border-radius: 10px !important;
-    transition: all 0.5s !important;
+.navbar-nav li a:hover{
+    color: #000000;
+    background-color: #e9ce9f;
+    border-radius: 10px;
+    transition: all 0.5s;
 }
 
 .navbar .dropdown-menu{
-    padding: 10px 10px !important;
-    background-color: #000000 !important;
+    padding: 10px 10px;
+    background-color: #000000;
 }
 
 .navbar .dropdown-menu .dropdown-item{
-    margin: 0px !important;
+    margin: 0px;
 }
 
 header nav .logo-marca {
