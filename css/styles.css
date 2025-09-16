@@ -11,7 +11,7 @@
 
 header .navbar{
     background-color: #000000 !important;
-    
+
 }
 
 .navbar-nav li a{
@@ -46,7 +46,7 @@ header nav .logo-marca {
 
 .navbar .navbar-toggler
 {
-    color: #e9ce9f !important;
+    color: #e9ce9f;
 }
 
 /* FIN DEL NAV */
@@ -61,7 +61,6 @@ header nav .logo-marca {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
     justify-content: space-around;
     flex-flow: row wrap;
     align-items: center;
@@ -108,18 +107,6 @@ header nav .logo-marca {
     border-radius: 50%;
 }
 
-.banner-central h2 {
-    color: #ffffff;
-    font-size: 80px;
-    font-weight: 200;
-}
-
-.banner-central h2 span {
-    font-weight: 600;
-}
-
-/* FIN DE BANNER CENTRAL */
-
 /* INICIO DE SECCION SECUNDARIA */
 
 main .section-secundaria {
@@ -131,12 +118,11 @@ main .section-secundaria {
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
-.section-secundaria h2 {
-    color: #ffffff;
-    text-align: center;
+.section-secundaria .t-secundario {
     font-size: 50px;
 }
 
@@ -144,15 +130,15 @@ main .section-secundaria {
     font-weight: 200;
 }
 
-.section-secundaria p, h3 {
+.t-secundario, .p-secundario {
     text-align: center;
+    width: 50%;
     color: #ffffff;
 }
 
 .section-secundaria .content-servicios {
     display: flex;
-    width: 80%;
-    margin-bottom: 10px;
+    width: 70%;
     align-content: center;
     justify-content: space-around;
     flex-flow: row wrap;
@@ -161,27 +147,27 @@ main .section-secundaria {
 .content-servicios .nuestros-servicios {
     display: flex;
     width: 300px;
+    height: auto;
+    margin: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.301);
+    background-color: rgba(255, 255, 255, 0.514);
     border-radius: 20px;
-    justify-content: space-around;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 .nuestros-servicios img {
-    width: 90%;
+    width: 95%;
     border-radius: 20px;
 }
 
-.nuestros-servicios p{
-    font-size: 1em;
-}
 .nuestros-servicios h3{
     font-size: 20px;
     font-weight: 600;
-    margin-top: 10px;
+    color: #000000;
 }
 .nuestros-servicios a {
     color: #000000;
@@ -320,46 +306,6 @@ main .section-secundaria {
 /* FIN DE NOSOTROS */
 
 /* INICIO DE SERVICIOS */
-
-.servicios {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    background-image: url("../img/fondo2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 20px;
-}
-
-.content-serv {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
-    width: 300px;
-    height: 550px;
-    margin: 10px;
-    background-color: rgba(255, 255, 255, 0.301);
-    border-radius: 20px;
-}
-
-.content-serv span {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.content-serv img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 250px;
-    height: 250px;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
 
 /* FIN DE SERVICIOS */
 
