@@ -359,14 +359,15 @@ span {
 /* INICIO DE CONTACTO */
 .section-contacto{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column; */
+    justify-content: space-around;
     align-items: center;
     background-image: url(../img/fondo2-degradado.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    text-align: center;
 }
 
 .section-contacto .titulo-contacto{
@@ -394,7 +395,46 @@ span {
 
 .content-form .caja-texto{
     height: 250px;
-}   
+}
+
+.content-mapa-redes{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* padding: 30px; */
+    align-items: center;
+    width: 50%;
+}
+.content-mapa-redes div h3, .mapa-contacto h3 span{
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.redes-contacto{
+    display: flex;  
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+}
+
+.content-redes {
+    display: flex;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+.content-redes .icon-1, .icon-2, .icon-3, .icon-4, .icon-5{
+    color: #e9ce9f;
+    font-size: 50px;
+}
+
+
 
 /* FIN DE CONTACTO */
 /* INICIO DE CURSOS */
