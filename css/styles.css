@@ -231,19 +231,19 @@ span {
     color: #e9ce9f;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    align-items: center;
-    justify-content: space-around;
+    /* align-items: center; */
+    justify-content: space-evenly;
 }
 
 .pie-pagina .content-icon {
     display: flex;
-    flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
     padding: 30px;
 }
 
-.pie-pagina .fa-facebook,
+.pie-pagina 
+.fa-facebook,
 .fa-instagram,
 .fa-x-twitter,
 .fa-youtube {
@@ -253,50 +253,27 @@ span {
 
 .pie-pagina .content-central {
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    flex-direction: column-reverse;
+    justify-content: end;
+    text-align: center;
 }
 
-.content-central .fa-location-dot {
-    font-size: 18px;
-    color: #e9ce9f;
-}
-
-.content-central .fa-copyright {
+.content-central .fa-copyright{
     font-size: 12px;
     color: #e9ce9f;
 }
-
 .content-central p {
     font-size: 12px;
     color: #e9ce9f;
-    margin-top: 20px;
 }
 
-.content-central .mapa-pie {
-    width: 90%;
-    height: 150px;
-    border-radius: 15px;
-}
-
-.content-central h3 {
-    text-align: center;
-    font-weight: 200;
-    margin-top: 10px;
-    font-size: 18px;
-    color: #e9ce9f;
-}
-
-.pie-pagina .content-menu {
+.pie-pagina .content-menu{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
 }
 
 .content-menu ul {
-    width: 20%;
-    margin: auto;
     border-left: 2px solid #e9ce9f;
     padding: 20px;
     list-style: none;
@@ -318,7 +295,6 @@ span {
     border-bottom: 2px solid #e9ce9f;
     /* border-radius: 10px; */
 }
-
 /* FIN DEL PIE DE PAGINA */
 
 /* NOSOTROS */
@@ -367,13 +343,14 @@ span {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    padding: 20px;
     text-align: center;
 }
 
 .section-contacto .titulo-contacto{
     color: #ffffff;
     font-size: 24px;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .content-form{
@@ -420,18 +397,17 @@ span {
 
 .content-redes {
     display: flex;
-    width: 5em;
-    height: 5em;
+    width: 4em;
+    height: 4em;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    z-index: 1;
     background-color: rgba(255, 255, 255, 0.24);
 }
 
 .content-redes .icon-1, .icon-2, .icon-3, .icon-4, .icon-5{
     color: #e9ce9f;
-    font-size: 50px;
+    font-size: 2em;
 }
 
 
