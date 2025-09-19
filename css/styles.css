@@ -9,32 +9,30 @@
     font-family: Poppins, sans-serif;
 }
 
-.icon-whatsapp{
+.icon-whatsapp {
     display: flex;
     position: fixed;
     left: 92%;
-    top: 55%;
-    width: 100px;
-    height: 100px;
+    top: 78%;
+    width: 5em;
+    height: 5em;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
     z-index: 1;
-    
-    background-color: rgba(255, 255, 255, 0.301);
-
+    background-color: rgba(255, 255, 255, 0.61);
 }
 
-.icon-whatsapp .fa-whatsapp{
+.icon-whatsapp .fa-whatsapp {
     color: #0cdb2f;
-    font-size: 80px;
+    font-size: 50px;
 }
-header .navbar{
+
+header .navbar {
     background-color: #000000 !important;
-
 }
 
-.navbar-nav li a{
+.navbar-nav li a {
     color: #e9ce9f;
     font-weight: 600;
     font-size: 1em;
@@ -43,19 +41,19 @@ header .navbar{
     border-radius: 10px;
 }
 
-.navbar-nav li a:hover{
+.navbar-nav li a:hover {
     color: #000000;
     background-color: #e9ce9f;
     border-radius: 10px;
     transition: all 0.5s;
 }
 
-.navbar .dropdown-menu{
+.navbar .dropdown-menu {
     padding: 10px 10px;
     background-color: #000000;
 }
 
-.navbar .dropdown-menu .dropdown-item{
+.navbar .dropdown-menu .dropdown-item {
     margin: 0px;
 }
 
@@ -64,8 +62,7 @@ header nav .logo-marca {
     height: 80px;
 }
 
-.navbar .navbar-toggler
-{
+.navbar .navbar-toggler {
     color: #e9ce9f;
 }
 
@@ -76,7 +73,7 @@ header nav .logo-marca {
 .section-hero {
     display: flex;
     width: 100%;
-    padding: 20px;
+    padding: 60px;
     background-image: url(../img/fondo.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -102,12 +99,14 @@ header nav .logo-marca {
 
 .content-hero p {
     font-weight: 600;
+    font-size: 1em;
 }
 
 .content-hero a {
     width: 160px;
     color: #000000;
     font-weight: 600;
+    font-size: 1em;
     border: 1px solid black;
     text-decoration: none;
     text-transform: uppercase;
@@ -121,10 +120,15 @@ header nav .logo-marca {
     background-color: #000000;
 }
 
+.content-logo {
+    width: 30%;
+    height: 30%;
+}
+
 .content-logo .logo {
-    width: 450px;
-    height: 450px;
+    width: 100%;
     border-radius: 50%;
+    border: 1px solid black;
 }
 
 /* INICIO DE SECCION SECUNDARIA */
@@ -142,25 +146,38 @@ main .section-secundaria {
     align-items: center;
 }
 
-.section-secundaria .t-secundario {
+.section-secundaria div {
+    width: 50%;
+    text-align: center;
+}
+
+.section-secundaria div h2,
+span {
     font-size: 50px;
+    color: #ffffff;
 }
 
 .section-secundaria h2 span {
     font-weight: 200;
 }
 
-.t-secundario, .p-secundario {
-    text-align: center;
-    width: 50%;
+.section-secundaria div p {
     color: #ffffff;
 }
 
+/* .t-secundario,
+.p-secundario {
+    text-align: center;
+    width: 50%;
+    color: #ffffff;
+} */
+
 .section-secundaria .content-servicios {
     display: flex;
-    width: 70%;
+    width: 80%;
+    /* border: 1px solid black; */
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-flow: row wrap;
 }
 
@@ -168,13 +185,12 @@ main .section-secundaria {
     display: flex;
     width: 300px;
     height: auto;
-    margin: 10px;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: rgba(255, 255, 255, 0.514);
     border-radius: 20px;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
@@ -184,11 +200,12 @@ main .section-secundaria {
     border-radius: 20px;
 }
 
-.nuestros-servicios h3{
+.nuestros-servicios h3 {
     font-size: 20px;
     font-weight: 600;
     color: #000000;
 }
+
 .nuestros-servicios a {
     color: #000000;
     font-weight: 600;
@@ -208,40 +225,46 @@ main .section-secundaria {
 /* COMIENDO DEL PIE DE PAGINA */
 
 .pie-pagina {
-    display: flex;
+    display: grid;
     width: 100%;
-    height: 100%;
     background-color: #000000;
     color: #e9ce9f;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     align-items: center;
     justify-content: space-around;
 }
 
 .pie-pagina .content-icon {
     display: flex;
-    width: 361px;
-    height: 100%;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
     padding: 30px;
 }
 
-.pie-pagina .content-icon a span,
-.fa-brands,.fa-facebook,
-.fa-brands,.fa-instagram,
-.fa-brands,.fa-x-twitter,
-.fa-brands,.fa-youtube {
+.pie-pagina .fa-facebook,
+.fa-instagram,
+.fa-x-twitter,
+.fa-youtube {
     font-size: 28px;
     color: #e9ce9f;
 }
 
 .pie-pagina .content-central {
     display: flex;
-    width: 361px;
     flex-direction: column;
     align-content: center;
+}
+
+.content-central .fa-location-dot {
+    font-size: 18px;
+    color: #e9ce9f;
+}
+
+.content-central .fa-copyright {
+    font-size: 12px;
+    color: #e9ce9f;
 }
 
 .content-central p {
@@ -264,33 +287,38 @@ main .section-secundaria {
     color: #e9ce9f;
 }
 
-.pie-pagina .content-menu-footer {
-    width: 360px;
-    text-align: center;
+.pie-pagina .content-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
-.content-menu-footer ul {
-    width: 100%;
+.content-menu ul {
+    width: 20%;
+    margin: auto;
+    border-left: 2px solid #e9ce9f;
     padding: 20px;
     list-style: none;
 }
 
-.content-menu-footer ul li{
+.content-menu ul li {
     padding: 3px;
 }
 
-.content-menu-footer ul li a {
+.content-menu ul li a {
     text-decoration: none;
     font-weight: 600;
-    padding: 3px 5px;
+    /* padding: 3px 5px; */
     color: #e9ce9f;
     text-transform: uppercase;
 }
 
-.content-menu-footer ul li a:hover{
-    border-bottom: 3px solid #e9ce9f;
-    border-radius: 10px;
+.content-menu ul li a:hover {
+    border-bottom: 2px solid #e9ce9f;
+    /* border-radius: 10px; */
 }
+
 /* FIN DEL PIE DE PAGINA */
 
 /* NOSOTROS */
@@ -328,18 +356,59 @@ main .section-secundaria {
 /* INICIO DE SERVICIOS */
 
 /* FIN DE SERVICIOS */
+/* INICIO DE CONTACTO */
+.section-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/fondo2-degradado.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
 
+.section-contacto .titulo-contacto{
+    color: #ffffff;
+    font-size: 24px;
+    margin: 20px;
+}
+
+.content-form{
+    display: flex;
+    width: 450px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffff69;
+    padding: 30px;
+}
+
+.content-form input, .caja-texto{
+    width: 100%;
+    font-size: 14px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.content-form .caja-texto{
+    height: 250px;
+}
+
+/* FIN DE CONTACTO */
 /* INICIO DE CURSOS */
-.cursos{
+
+.cursos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #b4b4b4;
     width: 100%;
-    /* background-color: #9e9e9e4b; */
-
 }
-.divisor-curso{
+
+.divisor-curso {
     display: flex;
     background-color: #e9ce9f;
     color: #000;
@@ -347,55 +416,128 @@ main .section-secundaria {
     padding: 20px;
     justify-content: center;
 }
-.cursos .titulo-curso{
+
+.cursos .titulo-curso {
     margin-top: 20px;
 }
-.cursos .content-curso{
+
+.cursos .content-curso {
     display: grid;
     width: 80%;
-    padding: 10px;
-    gap: 10px;
+    border: 1px solid black;
+    gap: 20px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 500px 130px;
-    grid-template-areas: "descripcion   descripcion"
-                         "ventaja       ventaja    ";
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "imagen        descripcion"
+                         "ventaja       descripcion";
 }
 
-.content-curso .imagen{
-    width: 350px;
+.content-curso .imagen {
+    grid-area: imagen;
+    width: 250px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
 }
 
-.descripcion{
+.descripcion {
     display: flex;
+    flex-direction: column;
+    background-color: #e9ce9f80;
     justify-content: space-between;
     grid-area: descripcion;
-    padding: 20px;
+    /* padding: 20px; */
+    border-radius: 20px;
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
 }
-.descripcion h4{
+
+.descripcion h4 {
+    padding: 20px;
     font-size: 16px;
 }
 
-.content-temas{
-    border-left: 2px solid #e9ce9f;
-    padding: 20px ;
-}
-.content-curso ul li{
+.content-curso ul li {
     font-size: 14px;
 }
 
-.ventaja{
+.ventaja {
     display: flex;
     flex-direction: column;
     align-items: center;
     grid-area: ventaja;
     padding: 20px;
+    border-radius: 20px;
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
-
-
 /* FIN DE CURSOS */
 
-/* INICIO CONTACTO */ 
+/* MEDIA QUERY */
+
+@media screen and (max-width:350px) {
+
+    /* ICONO WHATSAPP */
+
+    .icon-whatsapp {
+        left: 83%;
+        top: 90%;
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .icon-whatsapp .fa-whatsapp {
+        font-size: 25px;
+    }
+
+    /* SECTION HERO */
+    .section-hero {
+        padding: 20px;
+    }
+
+    .section-hero .content-hero {
+        width: 300px;
+        height: 280px;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    .content-hero p {
+        font-size: 12px;
+    }
+
+    .content-hero h1 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .content-hero a {
+        width: 100px;
+        font-size: 12px;
+    }
+
+    /* SECCION SECUNDARIA */
+
+    .section-secundaria div {
+        width: 90%;
+    }
+
+    .section-secundaria div h2,
+    span {
+        font-size: 28px;
+    }
+
+    .section-secundaria div p {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
+    .section-secundaria .content-servicios {
+        width: 90%;
+    }
+
+    .content-servicios .nuestros-servicios {
+        display: flex;
+        width: 300px;
+        height: auto;
+        padding: 10px;
+    }
+}
