@@ -12,8 +12,8 @@
 .icon-whatsapp {
     display: flex;
     position: fixed;
-    left: 92%;
-    top: 78%;
+    margin-left: 90%;
+    margin-top: 30%;
     width: 5em;
     height: 5em;
     border-radius: 50%;
@@ -85,8 +85,7 @@ header nav .logo-marca {
 
 .section-hero .content-hero {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.301);
-    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.514);
     width: 500px;
     height: 350px;
     margin: 30px;
@@ -165,17 +164,9 @@ span {
     color: #ffffff;
 }
 
-/* .t-secundario,
-.p-secundario {
-    text-align: center;
-    width: 50%;
-    color: #ffffff;
-} */
-
 .section-secundaria .content-servicios {
     display: flex;
     width: 80%;
-    /* border: 1px solid black; */
     align-content: center;
     justify-content: space-evenly;
     flex-flow: row wrap;
@@ -188,7 +179,6 @@ span {
     padding: 20px;
     margin-bottom: 10px;
     background-color: rgba(255, 255, 255, 0.514);
-    border-radius: 20px;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -197,7 +187,6 @@ span {
 
 .nuestros-servicios img {
     width: 95%;
-    border-radius: 20px;
 }
 
 .nuestros-servicios h3 {
@@ -231,7 +220,6 @@ span {
     color: #e9ce9f;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    /* align-items: center; */
     justify-content: space-evenly;
 }
 
@@ -242,8 +230,7 @@ span {
     padding: 30px;
 }
 
-.pie-pagina 
-.fa-facebook,
+.pie-pagina .fa-facebook,
 .fa-instagram,
 .fa-x-twitter,
 .fa-youtube {
@@ -258,16 +245,17 @@ span {
     text-align: center;
 }
 
-.content-central .fa-copyright{
+.content-central .fa-copyright {
     font-size: 12px;
     color: #e9ce9f;
 }
+
 .content-central p {
     font-size: 12px;
     color: #e9ce9f;
 }
 
-.pie-pagina .content-menu{
+.pie-pagina .content-menu {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
@@ -286,52 +274,45 @@ span {
 .content-menu ul li a {
     text-decoration: none;
     font-weight: 600;
-    /* padding: 3px 5px; */
     color: #e9ce9f;
     text-transform: uppercase;
 }
 
 .content-menu ul li a:hover {
     border-bottom: 2px solid #e9ce9f;
-    /* border-radius: 10px; */
 }
+
 /* FIN DEL PIE DE PAGINA */
 
 /* NOSOTROS */
-
-.content-all {
+.nosotros {
     display: flex;
-    width: 100%;
-    padding: 30px;
-    background-image: url("../img/fondo2.jpg");
+    justify-content: center;
+    background-image: url("../img/fondo2-degradado.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    align-items: center;
 }
 
-.nosotros-text {
-    width: 600px;
-    color: #ffffff;
+.container-nosotros {
+    display: flex;
+    width: 80%;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.514);
+}
+
+.container-nosotros p {
+    padding: 20px;
     font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.content-all .content-photo {
-    width: 600px;
-    overflow: hidden;
-    border-top-left-radius: 80px;
-    border-bottom-right-radius: 80px;
+    color: #000;
 }
 
 /* FIN DE NOSOTROS */
 
 /* INICIO DE SERVICIOS */
 
-main .servicios{
+main .servicios {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -341,20 +322,20 @@ main .servicios{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.container-grid{
+
+.container-grid {
     display: grid;
-    /* background-color: #b4b4b4; */
     width: 70%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 300px);
     gap: 20px;
     grid-template-areas: "card-1    card-1    card-1    card-1"
-                         "card-2    card-2    card-3    card-3"
-                         "card-4    card-4    card-4    card-4"
-                         "card-5    card-5    card-6    card-6";
+        "card-2    card-2    card-3    card-3"
+        "card-4    card-4    card-4    card-4"
+        "card-5    card-5    card-6    card-6";
 }
 
-.card-style{
+.card-style {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -362,53 +343,52 @@ main .servicios{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 20px;
     overflow: hidden;
-
 }
 
-.card-style .info{
+.card-style .info {
     background-color: rgba(255, 255, 255, 0.37);
     width: 100%;
     height: auto;
     padding: 10px;
 }
 
-.info h3{
+.info h3 {
     font-size: 20px;
     font-weight: 700;
 }
-.info p{
+
+.info p {
     font-size: 16px;
     font-weight: 600;
 }
 
-.card-1{
+.card-1 {
     background-image: url("../img/Manicura.jpg");
     grid-area: card-1;
 }
 
-.card-2{
+.card-2 {
     background-image: url("../img/Esmalte.jpg");
     grid-area: card-2;
 }
 
-.card-3{
+.card-3 {
     background-image: url("../img/Unas-esculpidas.jpg");
     grid-area: card-3;
 }
 
-.card-4{
+.card-4 {
     background-image: url("../img/Pedicura.jpg");
     grid-area: card-4;
 }
 
-.card-5{
+.card-5 {
     background-image: url("../img/Pestanas-y-cejas.jpg");
     grid-area: card-5;
 }
 
-.card-6{
+.card-6 {
     background-image: url("../img/facial.jpg");
     grid-area: card-6;
 }
@@ -416,9 +396,8 @@ main .servicios{
 /* FIN DE SERVICIOS */
 
 /* INICIO DE CONTACTO */
-.section-contacto{
+.section-contacto {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-around;
     align-items: center;
     background-image: url(../img/fondo2-degradado.jpg);
@@ -430,13 +409,13 @@ main .servicios{
     text-align: center;
 }
 
-.section-contacto .titulo-contacto{
+.section-contacto .titulo-contacto {
     color: #ffffff;
     font-size: 24px;
     /* margin: 20px; */
 }
 
-.content-form{
+.content-form {
     display: flex;
     width: 450px;
     flex-direction: column;
@@ -446,30 +425,33 @@ main .servicios{
     padding: 30px;
 }
 
-.content-form input, .caja-texto{
+.content-form input,
+.caja-texto {
     width: 100%;
     font-size: 14px;
     margin: 5px;
     padding: 5px;
 }
 
-.content-form .caja-texto{
+.content-form .caja-texto {
     height: 250px;
 }
 
-.content-mapa-redes{
+.content-mapa-redes {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
 }
-.content-mapa-redes div h3, .mapa-contacto h3 span{
+
+.content-mapa-redes div h3,
+.mapa-contacto h3 span {
     color: #ffffff;
     font-size: 24px;
 }
 
-.redes-contacto{
-    display: flex;  
+.redes-contacto {
+    display: flex;
     width: 100%;
     margin-top: 20px;
     justify-content: space-evenly;
@@ -485,7 +467,11 @@ main .servicios{
     background-color: rgba(255, 255, 255, 0.24);
 }
 
-.content-redes .icon-1, .icon-2, .icon-3, .icon-4, .icon-5{
+.content-redes .icon-1,
+.icon-2,
+.icon-3,
+.icon-4,
+.icon-5 {
     color: #e9ce9f;
     font-size: 2em;
 }
@@ -493,37 +479,43 @@ main .servicios{
 /* FIN DE CONTACTO */
 
 /* INICIO DE CURSOS */
+.fondo-curso {
+    background-color: #464545;
+}
 
-.cursos{
+.cursos {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: auto;
 }
 
-.content-info{
+.content-info {
     display: flex;
     margin-top: 10px;
 }
 
-.content-info img{
+.content-info img {
     width: 50%;
 }
 
-.content-info div{
+.content-info div {
     margin-left: 10px;
 }
-.content-info h2{
+
+.content-info h2 {
     text-align: center;
     padding: 20px;
     color: #e9ce9f;
     background-color: #000000;
 }
-.content-info p{
-    padding: 50px;
 
+.content-info p {
+    padding: 50px;
+    color: #e9ce9f;
 }
-.content-all-icon{
+
+.content-all-icon {
     display: flex;
     width: 100%;
     height: 80px;
@@ -533,7 +525,7 @@ main .servicios{
     background-color: black;
 }
 
-.content-icon-curso{
+.content-icon-curso {
     display: flex;
     height: 100%;
     /* border: 1px solid black; */
@@ -542,25 +534,36 @@ main .servicios{
     align-items: center;
     width: auto;
 }
-.fa-medal, .fa-money-bill-1-wave, .fa-heart, .fa-chart-line, .fa-tv{
+
+.fa-medal,
+.fa-money-bill-1-wave,
+.fa-heart,
+.fa-chart-line,
+.fa-tv {
     font-size: 30px;
     color: #e9ce9f;
 }
-.content-icon-curso h4{
+
+.content-icon-curso h4 {
     font-size: 16px;
     color: #e9ce9f;
 }
 
-.content-temas{
+.content-temas {
     margin-top: 10px;
 }
-.content-temas h3{
+
+.content-temas h3 {
     text-transform: uppercase;
     color: #e9ce9f;
 }
 
-.content-temas ul{
+.content-temas ul {
     list-style: none;
+}
+
+.content-temas ul li {
+    color: #e9ce9f;
 }
 
 /* FIN DE CURSOS */
@@ -568,18 +571,19 @@ main .servicios{
 /* MEDIA QUERY */
 
 @media screen and (max-width:350px) {
+    /* COMIENDO HOME */
 
     /* ICONO WHATSAPP */
 
     .icon-whatsapp {
-        left: 83%;
-        top: 90%;
-        width: 2.5em;
-        height: 2.5em;
+        margin-left: 85%;
+        margin-top: 50%;
+        width: 3em;
+        height: 3em;
     }
 
     .icon-whatsapp .fa-whatsapp {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     /* SECTION HERO */
@@ -633,5 +637,44 @@ main .servicios{
         width: 300px;
         height: auto;
         padding: 10px;
+    }
+
+    /* FOOTER */
+
+    .pie-pagina {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .pie-pagina .content-menu {
+        grid-row: 2 / 3;
+    }
+
+    /* FIN DE HOME */
+
+    /* COMIENDO DE NOSOTROS */
+
+    .container-nosotros {
+        flex-direction: column;
+        width: 90%;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .container-nosotros p {
+        font-size: 12px;
+    }
+
+    /* FIN DE NOSOTROS */
+
+    .container-grid {
+        display: grid;
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 10px;
+    }
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
+        grid-area: span auto;
     }
 }
