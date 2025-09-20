@@ -668,13 +668,16 @@ main .servicios {
     /* FIN DE NOSOTROS */
 
     .container-grid {
-        display: grid;
         width: 90%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
         gap: 10px;
+        grid-template-areas: "card-1"
+                             "card-2" 
+                             "card-3"
+                             "card-4"
+                             "card-5"
+                             "card-6";
     }
-    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
-        grid-area: span auto;
-    }
+   
 }
