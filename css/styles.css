@@ -460,8 +460,6 @@ main .servicios{
 .content-mapa-redes{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* padding: 30px; */
     align-items: center;
     width: 50%;
 }
@@ -475,7 +473,6 @@ main .servicios{
     width: 100%;
     margin-top: 20px;
     justify-content: space-evenly;
-    /* border: 1px solid black; */
 }
 
 .content-redes {
@@ -493,77 +490,77 @@ main .servicios{
     font-size: 2em;
 }
 
-
-
 /* FIN DE CONTACTO */
+
 /* INICIO DE CURSOS */
 
-.cursos {
+.cursos{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #b4b4b4;
-    width: 100%;
-}
-
-.divisor-curso {
-    display: flex;
-    background-color: #e9ce9f;
-    color: #000;
-    width: 100%;
-    padding: 20px;
-    justify-content: center;
-}
-
-.cursos .titulo-curso {
-    margin-top: 20px;
-}
-
-.cursos .content-curso {
-    display: grid;
     width: 80%;
-    border: 1px solid black;
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "imagen        descripcion"
-                         "ventaja       descripcion";
+    margin: auto;
 }
 
-.content-curso .imagen {
-    grid-area: imagen;
-    width: 250px;
-    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-}
-
-.descripcion {
+.content-info{
     display: flex;
-    flex-direction: column;
-    background-color: #e9ce9f80;
-    justify-content: space-between;
-    grid-area: descripcion;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
 }
 
-.descripcion h4 {
+.content-info img{
+    width: 50%;
+}
+
+.content-info div{
+    margin-left: 10px;
+}
+.content-info h2{
+    text-align: center;
     padding: 20px;
-    font-size: 16px;
+    color: #e9ce9f;
+    background-color: #000000;
 }
+.content-info p{
+    padding: 50px;
 
-.content-curso ul li {
-    font-size: 14px;
 }
-
-.ventaja {
+.content-all-icon{
     display: flex;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.content-icon-curso{
+    display: flex;
+    height: 100%;
+    /* border: 1px solid black; */
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    grid-area: ventaja;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
+    width: auto;
+}
+.fa-medal, .fa-money-bill-1-wave, .fa-heart, .fa-chart-line, .fa-tv{
+    font-size: 30px;
+    color: #e9ce9f;
+}
+.content-icon-curso h4{
+    font-size: 16px;
+    color: #e9ce9f;
+}
+
+.content-temas{
+    margin-top: 10px;
+}
+.content-temas h3{
+    text-transform: uppercase;
+    color: #e9ce9f;
+}
+
+.content-temas ul{
+    list-style: none;
 }
 
 /* FIN DE CURSOS */
