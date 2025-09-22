@@ -409,7 +409,6 @@ main .servicios {
 .section-contacto .titulo-contacto {
     color: #ffffff;
     font-size: 24px;
-    /* margin: 20px; */
 }
 
 .content-form {
@@ -658,7 +657,7 @@ main .servicios {
 
     /* FIN DE HOME */
 
-    /* COMIENDO DE NOSOTROS */
+    /* COMIENDO DE NOSOTROS
 
     .container-nosotros {
         flex-direction: column;
@@ -671,7 +670,7 @@ main .servicios {
         font-size: 12px;
     }
 
-    /* FIN DE NOSOTROS */
+    FIN DE NOSOTROS
 
     .container-grid {
         width: 90%;
@@ -686,7 +685,7 @@ main .servicios {
             "card-6";
     }
 
-    /* COMIENZO DE CURSOS */
+    COMIENZO DE CURSOS
 
     .cursos {
         width: 90%;
@@ -736,9 +735,9 @@ main .servicios {
         font-size: 10px;
     }
 
-    /* FIN DE CURSOS */
+    FIN DE CURSOS
 
-    /* INICIO DE CONTACTO */
+    INICIO DE CONTACTO
 
     .section-contacto {
         flex-direction: column;
@@ -772,6 +771,6 @@ main .servicios {
     .mapa-contacto .mapa-pie {
         width: 300px;
         height: 150px;
-    }
+    }  */
 
 }
