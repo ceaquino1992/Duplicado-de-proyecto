@@ -189,7 +189,8 @@ span {
     width: 100%;
 }
 
-.nuestros-servicios h3, a {
+.nuestros-servicios h3,
+a {
     margin: 10px;
     font-size: 20px;
     font-weight: 600;
@@ -616,14 +617,15 @@ main .servicios {
     }
 
     .section-secundaria div p {
-       font-size: 14px;
+        font-size: 14px;
     }
 
     .section-secundaria .content-servicios {
         width: 100%;
     }
 
-    .nuestros-servicios h3, a {
+    .nuestros-servicios h3,
+    a {
         font-size: 18px;
     }
 
@@ -718,5 +720,74 @@ main .servicios {
 
     .content-redes i {
         font-size: 24px;
+    }
+
+    /* CURSOS */
+
+    .content-info {
+       flex-direction: column;
+    }
+
+    .content-info img {
+        width: 100%;
+    }
+
+    .content-info div {
+        margin: 0px;
+    }
+
+    .content-info h2 {
+       font-size: 18px;
+    }
+
+    .content-info p {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .content-all-icon {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        padding: 10px;
+        margin-top: 10px;
+        justify-content: space-evenly;
+        background-color: black;
+    }
+
+    .content-icon-curso {
+        text-align: center;
+        margin: 3px;
+    }
+
+    .content-icon-curso i {
+        font-size: 16px;
+    }
+
+    .content-icon-curso h4 {
+        font-size: 10px;
+    }
+
+    .content-curso .content-temas {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .content-temas h3 {
+        font-size: 18px;
+    }
+
+    .content-temas ul li {
+        font-size: 14px;
+    }
+
+    .content-temas div:nth-last-child(1) {
+        margin: 0px;
+    }
+
+    .content-temas div .form-curso {
+        width: 100%;
+        height: 300px;
+        padding: 20px;
     }
 }
