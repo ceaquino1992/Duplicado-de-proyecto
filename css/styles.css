@@ -393,6 +393,7 @@ main .servicios {
 /* FIN DE SERVICIOS */
 
 /* INICIO DE CONTACTO */
+
 .section-contacto {
     display: flex;
     justify-content: space-around;
@@ -402,7 +403,8 @@ main .servicios {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    padding: 20px;
+    height: 100%;
+    padding: 30px;
     text-align: center;
 }
 
@@ -444,6 +446,11 @@ main .servicios {
 .mapa-contacto h3 span {
     color: #ffffff;
     font-size: 24px;
+}
+
+.mapa-contacto .mapa-pie {
+    width: 100%;
+    height: 80%;
 }
 
 .redes-contacto {
@@ -620,5 +627,64 @@ main .servicios {
 
     .content-menu ul li a {
         font-size: 12px;
+    }
+
+    /* CONTACTO */
+
+    .section-contacto {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .section-contacto .titulo-contacto {
+        font-size: 18px;
+    }
+
+    .content-form {
+        width: 310px;
+        padding: 20px;
+    }
+
+    .content-form input,
+    .caja-texto {
+        font-size: 12px;
+        margin: 3px;
+        padding: 3px;
+    }
+
+    .content-form .caja-texto {
+        height: 100px;
+    }
+
+    .content-mapa-redes {
+        width: 100%;
+    }
+
+    .content-mapa-redes div h3,
+    .mapa-contacto h3 span {
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .redes-contacto {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+
+    .content-redes {
+        display: flex;
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.24);
+    }
+
+    .content-redes i {
+        color: #e9ce9f;
+        font-size: 24px;
     }
 }
