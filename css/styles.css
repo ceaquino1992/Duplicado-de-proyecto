@@ -230,10 +230,7 @@ span {
     padding: 30px;
 }
 
-.pie-pagina .fa-facebook,
-.fa-instagram,
-.fa-x-twitter,
-.fa-youtube {
+.pie-pagina a span {
     font-size: 28px;
     color: #e9ce9f;
 }
@@ -467,11 +464,7 @@ main .servicios {
     background-color: rgba(255, 255, 255, 0.24);
 }
 
-.content-redes .icon-1,
-.icon-2,
-.icon-3,
-.icon-4,
-.icon-5 {
+.content-redes i {
     color: #e9ce9f;
     font-size: 2em;
 }
@@ -486,13 +479,13 @@ main .servicios {
 .cursos {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
 .content-info {
     display: flex;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .content-info img {
@@ -505,6 +498,7 @@ main .servicios {
 
 .content-info h2 {
     text-align: center;
+    text-transform: uppercase;
     padding: 20px;
     color: #e9ce9f;
     background-color: #000000;
@@ -528,18 +522,13 @@ main .servicios {
 .content-icon-curso {
     display: flex;
     height: 100%;
-    /* border: 1px solid black; */
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: auto;
 }
 
-.fa-medal,
-.fa-money-bill-1-wave,
-.fa-heart,
-.fa-chart-line,
-.fa-tv {
+.content-icon-curso i {
     font-size: 30px;
     color: #e9ce9f;
 }
@@ -549,8 +538,10 @@ main .servicios {
     color: #e9ce9f;
 }
 
-.content-temas {
-    margin-top: 10px;
+.content-curso .content-temas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
 .content-temas h3 {
@@ -564,6 +555,21 @@ main .servicios {
 
 .content-temas ul li {
     color: #e9ce9f;
+}
+
+.content-temas div:nth-last-child(1) {
+    margin-right: 100px;
+}
+
+.content-temas div .form-curso {
+    width: 350px;
+    height: 450px;
+}
+
+.content-temas div .titulo-form {
+    color: #e9ce9f;
+    font-size: 18px;
+    text-align: center;
 }
 
 /* FIN DE CURSOS */
@@ -673,11 +679,99 @@ main .servicios {
         grid-template-rows: repeat(6, 1fr);
         gap: 10px;
         grid-template-areas: "card-1"
-                             "card-2" 
-                             "card-3"
-                             "card-4"
-                             "card-5"
-                             "card-6";
+            "card-2"
+            "card-3"
+            "card-4"
+            "card-5"
+            "card-6";
     }
-   
+
+    /* COMIENZO DE CURSOS */
+
+    .cursos {
+        width: 90%;
+    }
+
+    .content-info,
+    .content-temas {
+
+        flex-direction: column;
+    }
+
+    .content-info div {
+        margin: 0px;
+    }
+
+    .content-info p,
+    li {
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    .content-info h2,
+    .content-temas h3 {
+        font-size: 18px;
+    }
+
+    .content-info img {
+        width: 100%;
+    }
+
+    .content-all-icon {
+        height: 50px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .content-icon-curso {
+        text-align: center;
+        width: auto;
+    }
+
+    .content-icon-curso i {
+        font-size: 12px;
+    }
+
+    .content-icon-curso h4 {
+        font-size: 10px;
+    }
+
+    /* FIN DE CURSOS */
+
+    /* INICIO DE CONTACTO */
+
+    .section-contacto {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .content-form,
+    .content-temas div .form-curso {
+        width: 300px;
+        padding: 10px;
+    }
+
+    .content-form input,
+    .caja-texto {
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    .content-form .caja-texto {
+        height: 150px;
+    }
+
+    .content-mapa-redes div h3,
+    .mapa-contacto h3 span,
+    .section-contacto .titulo-contacto {
+        font-size: 14px;
+    }
+
+    .mapa-contacto .mapa-pie {
+        width: 300px;
+        height: 150px;
+    }
+
 }
