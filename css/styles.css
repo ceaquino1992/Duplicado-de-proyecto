@@ -575,7 +575,7 @@ main .servicios {
 
 /* MEDIA QUERY */
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:445px) {
 
     .icon-whatsapp {
         width: 3em;
