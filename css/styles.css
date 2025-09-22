@@ -88,7 +88,7 @@ header nav .logo-marca {
     background-color: rgba(255, 255, 255, 0.514);
     width: 500px;
     height: 350px;
-    margin: 30px;
+    margin: 20px;
     padding: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -177,7 +177,7 @@ span {
     width: 300px;
     height: auto;
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.514);
     flex-direction: column;
     justify-content: space-evenly;
@@ -186,20 +186,18 @@ span {
 }
 
 .nuestros-servicios img {
-    width: 95%;
+    width: 100%;
 }
 
-.nuestros-servicios h3 {
+.nuestros-servicios h3, a {
+    margin: 10px;
     font-size: 20px;
     font-weight: 600;
     color: #000000;
 }
 
 .nuestros-servicios a {
-    color: #000000;
-    font-weight: 600;
     text-decoration: none;
-    text-transform: uppercase;
     border: 1px solid black;
     border-radius: 20px;
     padding: 5px 10px;
@@ -584,15 +582,62 @@ main .servicios {
 
 @media screen and (max-width:445px) {
 
+    /* HERO */
+
+    .section-hero {
+        padding: 0px;
+    }
+
+    .content-hero p {
+        font-size: 14px;
+    }
+
+    .content-hero a {
+        width: auto;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    /* INICIO DE SECCION SECUNDARIA */
+
+    main .section-secundaria {
+        padding: 10px;
+        background-image: none;
+        background-color: #464545;
+    }
+
+    .section-secundaria div {
+        width: 100%;
+    }
+
+    .section-secundaria div h2,
+    span {
+        font-size: 24px;
+    }
+
+    .section-secundaria div p {
+       font-size: 14px;
+    }
+
+    .section-secundaria .content-servicios {
+        width: 100%;
+    }
+
+    .nuestros-servicios h3, a {
+        font-size: 18px;
+    }
+
+    /* FOOTER */
+
     .icon-whatsapp {
-        width: 3em;
-        height: 3em;
-        margin-left: 85%;
-        margin-top: 40%;
+        width: 60px;
+        height: 60px;
+        margin-left: 80%;
+        margin-top: 20%;
     }
 
     .icon-whatsapp .fa-whatsapp {
-        font-size: 24px;
+        font-size: 2.5em;
     }
 
     .pie-pagina {
@@ -666,25 +711,12 @@ main .servicios {
         font-size: 18px;
     }
 
-    .redes-contacto {
-        display: flex;
-        width: 100%;
-        margin-top: 20px;
-        justify-content: space-evenly;
-    }
-
     .content-redes {
-        display: flex;
         width: 3em;
         height: 3em;
-        border-radius: 50%;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(255, 255, 255, 0.24);
     }
 
     .content-redes i {
-        color: #e9ce9f;
         font-size: 24px;
     }
 }
