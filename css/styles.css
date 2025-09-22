@@ -738,7 +738,7 @@ main .servicios {
 
     /* FIN DE CURSOS */
 
-    /* INICIO DE CONTACTO */
+    /* INICIO DE CONTACTO 
 
     .section-contacto {
         flex-direction: column;
@@ -772,6 +772,6 @@ main .servicios {
     .mapa-contacto .mapa-pie {
         width: 300px;
         height: 150px;
-    }
+    }*/
 
 }
