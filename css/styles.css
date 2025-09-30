@@ -68,13 +68,18 @@ header nav .logo-marca {
 
 /* FIN DEL NAV */
 .home{
-    max-width: 1366px;
-    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #464545;
 }
 /* COMIENZO DE SECTION HERO */
 
 .home .section-hero {
     display: flex;
+    max-width: 1366px;
     width: 100%;
     padding: 60px;
     background-image: url(../img/fondo.jpeg);
@@ -99,7 +104,7 @@ header nav .logo-marca {
     text-align: center;
 }
 
-.content-hero p {
+.content-hero p, a{
     font-weight: 600;
     font-size: 1em;
 }
@@ -107,8 +112,6 @@ header nav .logo-marca {
 .content-hero a {
     width: 160px;
     color: #000000;
-    font-weight: 600;
-    font-size: 1em;
     border: 1px solid black;
     text-decoration: none;
     text-transform: uppercase;
@@ -133,10 +136,19 @@ header nav .logo-marca {
     border: 1px solid black;
 }
 
+/* INICIO CARROUSEL */
+
+.carrusel{
+    max-width: 1366px;
+}
+
+/* FIN CARROUSEL */
+
 /* INICIO DE SECCION SECUNDARIA */
 
-.section-secundaria {
+.home .section-secundaria {
     display: flex;
+    max-width: 1366px;
     width: 100%;
     padding: 30px;
     background-image: url(../img/salon.jpg);
@@ -148,26 +160,26 @@ header nav .logo-marca {
     align-items: center;
 }
 
-.section-secundaria div {
+.home .section-secundaria div {
     width: 50%;
     text-align: center;
 }
 
-.section-secundaria div h2,
+.home .section-secundaria div h2,
 span {
     font-size: 50px;
     color: #ffffff;
 }
 
-.section-secundaria h2 span {
+.home .section-secundaria h2 span {
     font-weight: 200;
 }
 
-.section-secundaria div p {
+.home .section-secundaria div p {
     color: #ffffff;
 }
 
-.section-secundaria .content-servicios {
+.home .section-secundaria .content-servicios {
     display: flex;
     width: 80%;
     align-content: center;
@@ -175,7 +187,7 @@ span {
     flex-flow: row wrap;
 }
 
-.content-servicios .nuestros-servicios {
+.home .section-secundaria .content-servicios .nuestros-servicios {
     display: flex;
     width: 300px;
     height: auto;
@@ -284,26 +296,34 @@ a {
 /* FIN DEL PIE DE PAGINA */
 
 /* NOSOTROS */
-.nosotros {
+.nosotros{
+    display: flex;
+    justify-content: center;
+    background-color: #464545;
+}
+
+.nosotros section {
     display: flex;
     max-width: 1366px;
-    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
     justify-content: center;
+    align-items: center;
     background-image: url("../img/fondo2-degradado.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.container-nosotros {
+.nosotros section div {
     display: flex;
     width: 80%;
     padding: 20px;
-    margin: 20px;
+    /* margin: 20px; */
     background-color: rgba(255, 255, 255, 0.514);
 }
 
-.container-nosotros p {
+.nosotros section div p {
     padding: 20px;
     font-size: 14px;
     color: #000;
@@ -390,24 +410,26 @@ a {
 /* FIN DE SERVICIOS */
 
 /* INICIO DE CONTACTO */
-
-.section-contacto {
+.contacto{
+    background-color: #464545;
+}
+.contacto .section-contacto {
     display: flex;
     margin: 0 auto;
     justify-content: space-around;
     max-width: 1366px;
+    width: 100%;
+    height: 100vh;
     align-items: center;
     background-image: url(../img/fondo2-degradado.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100%;
     padding: 30px;
     text-align: center;
 }
 
-.section-contacto .titulo-contacto {
+.contacto .section-contacto .titulo-contacto {
     color: #ffffff;
     font-size: 24px;
 }
