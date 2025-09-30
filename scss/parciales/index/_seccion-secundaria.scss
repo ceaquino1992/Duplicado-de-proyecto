@@ -1,0 +1,66 @@
+.section-secundaria {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  background-image: url(../img/salon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-secundaria div {
+  width: 50%;
+  text-align: center;
+}
+.section-secundaria div h2 {
+  font-size: 50px;
+  color: #ffffff;
+}
+.section-secundaria div h2 span {
+  font-weight: 200;
+}
+.section-secundaria div p {
+  color: #ffffff;
+}
+.section-secundaria .content-servicios {
+  display: flex;
+  width: 80%;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+.section-secundaria .content-servicios .nuestros-servicios {
+  display: flex;
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.514);
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.section-secundaria .content-servicios .nuestros-servicios img {
+  width: 100%;
+}
+.section-secundaria .content-servicios .nuestros-servicios h3,
+.section-secundaria .content-servicios .nuestros-servicios a {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+.section-secundaria .content-servicios .nuestros-servicios a {
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.section-secundaria .content-servicios .nuestros-servicios a:hover {
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #000000;
+}

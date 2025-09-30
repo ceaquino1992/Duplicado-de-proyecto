@@ -67,10 +67,13 @@ header nav .logo-marca {
 }
 
 /* FIN DEL NAV */
-
+.home{
+    max-width: 1366px;
+    margin: 0 auto;
+}
 /* COMIENZO DE SECTION HERO */
 
-.section-hero {
+.home .section-hero {
     display: flex;
     width: 100%;
     padding: 60px;
@@ -83,7 +86,7 @@ header nav .logo-marca {
     align-items: center;
 }
 
-.section-hero .content-hero {
+.home .section-hero .content-hero {
     display: flex;
     background-color: rgba(255, 255, 255, 0.514);
     width: 500px;
@@ -132,7 +135,7 @@ header nav .logo-marca {
 
 /* INICIO DE SECCION SECUNDARIA */
 
-main .section-secundaria {
+.section-secundaria {
     display: flex;
     width: 100%;
     padding: 30px;
@@ -307,86 +310,79 @@ a {
 /* FIN DE NOSOTROS */
 
 /* INICIO DE SERVICIOS */
-
-main .servicios {
+.servicios{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-image: url("../img/fondo2.jpg");
+    margin: 0 auto;
+    max-width: 1366px;
+}
+
+.servicios section .titulo-servicios{
+    background-image: url(../img/bg5.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.container-grid {
-    display: grid;
-    width: 70%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 300px);
-    gap: 20px;
-    grid-template-areas: "card-1    card-1    card-1    card-1"
-        "card-2    card-2    card-3    card-3"
-        "card-4    card-4    card-4    card-4"
-        "card-5    card-5    card-6    card-6";
-}
-
-.card-style {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    max-width: 1366px;
+    padding: 60px;
     text-align: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
 }
 
-.card-style .info {
-    background-color: rgba(255, 255, 255, 0.37);
+.servicios section .titulo-servicios h2{
+    color: #e9ce9f;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}
+
+.content-servicios{
+    display: flex;
     width: 100%;
+    max-width: 1366px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-servicios .img-servicio{
+    width: 200px;
     height: auto;
-    padding: 10px;
 }
 
-.info h3 {
-    font-size: 20px;
-    font-weight: 700;
+.content-servicios div{
+    width: 90%;
+    padding: 20px 50px;
+}
+.content-servicios .tabla {
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
-.info p {
-    font-size: 16px;
-    font-weight: 600;
+.content-servicios .tabla .subtitulo-servicio{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.tabla tr{
+    border-bottom: 1px solid black;
 }
 
-.card-1 {
-    background-image: url("../img/Manicura.jpg");
-    grid-area: card-1;
+.tabla tr th, td{
+    padding: 20px;
+    font-size: 14px;
 }
 
-.card-2 {
-    background-image: url("../img/Esmalte.jpg");
-    grid-area: card-2;
+.tabla .boton-servicio{
+    border: none;
 }
 
-.card-3 {
-    background-image: url("../img/Unas-esculpidas.jpg");
-    grid-area: card-3;
-}
-
-.card-4 {
-    background-image: url("../img/Pedicura.jpg");
-    grid-area: card-4;
-}
-
-.card-5 {
-    background-image: url("../img/Pestanas-y-cejas.jpg");
-    grid-area: card-5;
-}
-
-.card-6 {
-    background-image: url("../img/facial.jpg");
-    grid-area: card-6;
+.content-servicios div .boton-servicio{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+    padding: 5px 30px;
+    border-radius: 20px;
+    background-color: #000;
+    color: #ffffff;
 }
 
 /* FIN DE SERVICIOS */
@@ -395,7 +391,9 @@ main .servicios {
 
 .section-contacto {
     display: flex;
+    margin: 0 auto;
     justify-content: space-around;
+    max-width: 1366px;
     align-items: center;
     background-image: url(../img/fondo2-degradado.jpg);
     background-position: center;
@@ -479,6 +477,8 @@ main .servicios {
 /* INICIO DE CURSOS */
 .fondo-curso {
     background-color: #464545;
+    max-width: 1366px;
+    margin: 0 auto;
 }
 
 .cursos {
@@ -676,6 +676,22 @@ main .servicios {
         font-size: 12px;
     }
 
+    /* NOSOTROS */
+
+    .container-nosotros {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .container-nosotros p {
+        padding: 20px;
+        font-size: 14px;
+        color: #000;
+    }
+
     /* CONTACTO */
 
     .section-contacto {
@@ -725,7 +741,7 @@ main .servicios {
     /* CURSOS */
 
     .content-info {
-       flex-direction: column;
+        flex-direction: column;
     }
 
     .content-info img {
@@ -737,7 +753,7 @@ main .servicios {
     }
 
     .content-info h2 {
-       font-size: 18px;
+        font-size: 18px;
     }
 
     .content-info p {
