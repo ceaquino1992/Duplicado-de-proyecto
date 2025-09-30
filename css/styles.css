@@ -286,6 +286,8 @@ a {
 /* NOSOTROS */
 .nosotros {
     display: flex;
+    max-width: 1366px;
+    margin: 0 auto;
     justify-content: center;
     background-image: url("../img/fondo2-degradado.jpg");
     background-position: center;
