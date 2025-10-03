@@ -67,7 +67,7 @@ header nav .logo-marca {
 }
 
 /* FIN DEL NAV */
-.home{
+.home {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -105,7 +105,8 @@ header nav .logo-marca {
     text-align: center;
 }
 
-.content-hero p, a{
+.content-hero p,
+a {
     font-weight: 600;
     font-size: 1em;
 }
@@ -139,7 +140,7 @@ header nav .logo-marca {
 
 /* INICIO CARROUSEL */
 
-.carrusel{
+.carrusel {
     max-width: 1366px;
 }
 
@@ -201,11 +202,11 @@ span {
     text-align: center;
 }
 
-.nuestros-servicios img {
+.home .section-secundaria .content-servicios .nuestros-servicios img {
     width: 100%;
 }
 
-.nuestros-servicios h3,
+.home .section-secundaria .content-servicios .nuestros-servicios h3,
 a {
     margin: 10px;
     font-size: 20px;
@@ -213,14 +214,14 @@ a {
     color: #000000;
 }
 
-.nuestros-servicios a {
+.home .section-secundaria .content-servicios .nuestros-servicios a {
     text-decoration: none;
     border: 1px solid black;
     border-radius: 20px;
     padding: 5px 10px;
 }
 
-.section-secundaria .nuestros-servicios a:hover {
+.home .section-secundaria .content-servicios .nuestros-servicios a:hover {
     color: #ffffff;
     font-weight: 600;
     background-color: #000000;
@@ -297,7 +298,8 @@ a {
 /* FIN DEL PIE DE PAGINA */
 
 /* NOSOTROS */
-.nosotros{
+
+.nosotros {
     display: flex;
     justify-content: center;
     background-color: #464545;
@@ -320,7 +322,6 @@ a {
     display: flex;
     width: 80%;
     padding: 20px;
-    /* margin: 20px; */
     background-color: rgba(255, 255, 255, 0.514);
 }
 
@@ -333,13 +334,18 @@ a {
 /* FIN DE NOSOTROS */
 
 /* INICIO DE SERVICIOS */
-.servicios{
+
+.servicios {
     display: flex;
-    margin: 0 auto;
-    max-width: 1366px;
+    justify-content: center;
+    background-color: #464545;
 }
 
-.servicios section .titulo-servicios{
+.servicios section {
+    background-color: #ffffff;
+}
+
+.servicios section .titulo-servicios {
     background-image: url(../img/bg5.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -349,14 +355,14 @@ a {
     text-align: center;
 }
 
-.servicios section .titulo-servicios h2{
+.servicios section .titulo-servicios h2 {
     color: #e9ce9f;
     font-weight: 400;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 50px;
 }
 
-.content-servicios{
+.content-servicios {
     display: flex;
     width: 100%;
     max-width: 1366px;
@@ -365,39 +371,42 @@ a {
     align-items: center;
 }
 
-.content-servicios .img-servicio{
+.content-servicios .img-servicio {
     width: 200px;
     height: auto;
 }
 
-.content-servicios div{
+.content-servicios div {
     width: 90%;
     padding: 20px 50px;
 }
+
 .content-servicios .tabla {
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.content-servicios .tabla .subtitulo-servicio{
+.content-servicios .tabla .subtitulo-servicio {
     font-size: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.tabla tr{
+
+.tabla tr {
     border-bottom: 1px solid black;
 }
 
-.tabla tr th, td{
+.tabla tr th,
+td {
     padding: 20px;
     font-size: 14px;
 }
 
-.tabla .boton-servicio{
+.tabla .boton-servicio {
     border: none;
 }
 
-.content-servicios div .boton-servicio{
+.content-servicios div .boton-servicio {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
@@ -411,9 +420,11 @@ a {
 /* FIN DE SERVICIOS */
 
 /* INICIO DE CONTACTO */
-.contacto{
+
+.contacto {
     background-color: #464545;
 }
+
 .contacto .section-contacto {
     display: flex;
     margin: 0 auto;
@@ -502,14 +513,13 @@ a {
 /* INICIO DE CURSOS */
 .fondo-curso {
     background-color: #464545;
-    max-width: 1366px;
-    margin: 0 auto;
 }
 
 .cursos {
     display: flex;
     flex-direction: column;
     width: 90%;
+    max-width: 1366px;
     margin: auto;
 }
 
@@ -606,52 +616,63 @@ a {
 
 /* MEDIA QUERY */
 
-@media screen and (max-width:445px) {
+@media screen and (max-width:350px) {
 
-    /* HERO */
+    /* HOME */
 
-    .section-hero {
+    .home .section-hero {
         padding: 0px;
     }
 
+    .home .section-hero .content-hero {
+        width: 90%;
+    }
+
     .content-hero p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .content-hero a {
         width: auto;
-        font-size: 14px;
+        font-size: 12px;
         padding: 5px 10px;
     }
 
-    /* INICIO DE SECCION SECUNDARIA */
-
-    main .section-secundaria {
+    .home .section-secundaria {
         padding: 10px;
         background-image: none;
         background-color: #464545;
     }
 
-    .section-secundaria div {
-        width: 100%;
+    .home .section-secundaria div {
+        width: 90%;
+        text-align: center;
     }
 
-    .section-secundaria div h2,
+    .home .section-secundaria div h2,
     span {
         font-size: 24px;
     }
 
-    .section-secundaria div p {
-        font-size: 14px;
+    .home .section-secundaria div p {
+        font-size: 12px;
     }
 
-    .section-secundaria .content-servicios {
+    .home .section-secundaria .content-servicios {
+        width: 90%;
+    }
+
+    .home .section-secundaria .content-servicios .nuestros-servicios {
         width: 100%;
     }
 
-    .nuestros-servicios h3,
+    .home .section-secundaria .content-servicios .nuestros-servicios h3,
     a {
-        font-size: 18px;
+        font-size: 14px;
+    }
+
+    .home .section-secundaria .content-servicios .nuestros-servicios a {
+        padding: 3px 5px;
     }
 
     /* FOOTER */
@@ -703,25 +724,27 @@ a {
 
     /* NOSOTROS */
 
-    .container-nosotros {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
+    .nosotros section {
+        height: 100%;
         padding: 20px;
-        margin: 20px;
     }
 
-    .container-nosotros p {
-        padding: 20px;
-        font-size: 14px;
-        color: #000;
+    .nosotros section div {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nosotros section div p {
+        padding: 10px;
+        font-size: 12px;
     }
 
     /* CONTACTO */
 
-    .section-contacto {
-        flex-direction: column;
+    .contacto .section-contacto {
+        height: 100%;
         padding: 20px;
+        flex-direction: column;
     }
 
     .section-contacto .titulo-contacto {
@@ -786,23 +809,13 @@ a {
         font-size: 14px;
     }
 
-    .content-all-icon {
-        display: flex;
-        width: 100%;
-        height: 80px;
-        padding: 10px;
-        margin-top: 10px;
-        justify-content: space-evenly;
-        background-color: black;
-    }
-
     .content-icon-curso {
         text-align: center;
         margin: 3px;
     }
 
     .content-icon-curso i {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .content-icon-curso h4 {
@@ -827,8 +840,76 @@ a {
     }
 
     .content-temas div .form-curso {
-        width: 100%;
+        width: 70%;
         height: 300px;
+        margin: auto;
         padding: 20px;
     }
+
+    /* SERVICIOS */
+
+    .servicios section .titulo-servicios {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .servicios section .titulo-servicios h2 {
+        font-size: 30px;
+    }
+
+    .content-servicios {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 50px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content-servicios .img-servicio {
+        width: 100%;
+        margin: 20px;
+        height: 150px;
+    }
+
+    .content-servicios div {
+        width: 90%;
+        padding: 20px 50px;
+    }
+
+    .content-servicios .tabla {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .content-servicios .tabla .subtitulo-servicio {
+        font-size: 40px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .tabla tr {
+        border-bottom: 1px solid black;
+    }
+
+    .tabla tr th,
+    td {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .tabla .boton-servicio {
+        border: none;
+    }
+
+    .content-servicios div .boton-servicio {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-top: 40px;
+        padding: 5px 30px;
+        border-radius: 20px;
+        background-color: #000;
+        color: #ffffff;
+    } */
 }
