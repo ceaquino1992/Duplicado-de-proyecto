@@ -341,11 +341,11 @@ a {
     background-color: #464545;
 }
 
-.servicios section {
+.servicios .content-tabla {
     background-color: #ffffff;
 }
 
-.servicios section .titulo-servicios {
+.servicios .content-tabla .titulo-servicios {
     background-image: url(../img/bg5.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -355,7 +355,7 @@ a {
     text-align: center;
 }
 
-.servicios section .titulo-servicios h2 {
+.servicios .content-tabla .titulo-servicios h2 {
     color: #e9ce9f;
     font-weight: 400;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -412,6 +412,44 @@ td {
     text-transform: uppercase;
     margin-top: 40px;
     padding: 5px 30px;
+    border-radius: 20px;
+    background-color: #000;
+    color: #ffffff;
+}
+
+.servicios .responsive-350 {
+    display: none;
+}
+
+.servicios .responsive-350 .img-responsive-350 {
+    width: 360px;
+    height: 150px;
+}
+.servicios .responsive-350 div{
+    padding: 10px 20px;
+}
+.servicios .responsive-350 div h2 {
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+
+.servicios .responsive-350 div h4 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.servicios .responsive-350 div p {
+    font-size: 12px;
+}
+
+.servicios .responsive-350 div .boton-2 {
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 5px 10px;
     border-radius: 20px;
     background-color: #000;
     color: #ffffff;
@@ -511,6 +549,7 @@ td {
 /* FIN DE CONTACTO */
 
 /* INICIO DE CURSOS */
+
 .fondo-curso {
     background-color: #464545;
 }
@@ -848,68 +887,25 @@ td {
 
     /* SERVICIOS */
 
-    .servicios section .titulo-servicios {
-        width: 100%;
-        padding: 20px;
+    .servicios .content-tabla {
+        display: none;
     }
 
-    .servicios section .titulo-servicios h2 {
-        font-size: 30px;
-    }
-
-    .content-servicios {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 50px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .content-servicios .img-servicio {
-        width: 100%;
-        margin: 20px;
-        height: 150px;
-    }
-
-    .content-servicios div {
-        width: 90%;
-        padding: 20px 50px;
-    }
-
-    .content-servicios .tabla {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-    }
-
-    .content-servicios .tabla .subtitulo-servicio {
-        font-size: 40px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-
-    .tabla tr {
-        border-bottom: 1px solid black;
-    }
-
-    .tabla tr th,
-    td {
-        padding: 20px;
-        font-size: 14px;
-    }
-
-    .tabla .boton-servicio {
-        border: none;
-    }
-
-    .content-servicios div .boton-servicio {
+    .servicios .responsive-350 {
         display: inline-block;
-        text-decoration: none;
-        text-transform: uppercase;
-        margin-top: 40px;
-        padding: 5px 30px;
-        border-radius: 20px;
-        background-color: #000;
-        color: #ffffff;
+        background-color: #ffffff;
+    }
+
+    .servicios .responsive-350 div {
+        margin-bottom: 30px;
+    }
+
+    /* .servicios .responsive-350 div .img-responsive-350 {
+        display: block;
+        background-image: url('../img/mani-service-2-bg.jpg');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 150px;
     } */
 }
