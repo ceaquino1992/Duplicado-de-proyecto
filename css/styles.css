@@ -422,7 +422,8 @@ td {
 }
 
 .servicios .responsive-350 .img-responsive-350 {
-    width: 360px;
+    display: inline-block;
+    width: 450px;
     height: 150px;
 }
 
@@ -657,7 +658,7 @@ td {
 
 /* MEDIA QUERY */
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:450px) {
 
     /* HOME */
 
