@@ -218,6 +218,11 @@ a {
     color: #000000;
 }
 
+.home .section-secundaria .content-servicios .nuestros-servicios p{
+    color: #000;
+    font-weight: 600;
+}
+
 .home .section-secundaria .content-servicios .nuestros-servicios a {
     text-decoration: none;
     border: 1px solid black;

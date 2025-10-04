@@ -141,6 +141,12 @@
   color: #000000;
 }
 
+.home .section-secundaria .content-servicios .nuestros-servicios p {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+
 .home .section-secundaria .content-servicios .nuestros-servicios a {
   text-decoration: none;
   text-transform: uppercase;

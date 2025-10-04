@@ -8,6 +8,10 @@
     font-weight: $negrita;
 }
 
+$color: black;
+$grosor: 600;
+$text-mediano: 16px;
+
 .home {
   display: flex;
   width: 100%;
@@ -126,6 +130,13 @@
   font-weight: 600;
   color: #000000;
 }
+
+.home .section-secundaria .content-servicios .nuestros-servicios p{
+    color: $color;
+    font-weight: $grosor;
+    font-size: $text-mediano;
+}
+
 .home .section-secundaria .content-servicios .nuestros-servicios a {
   @include boton-1(none , uppercase , 1px solid black , 20px , 5px 10px, black , 700)
 }
