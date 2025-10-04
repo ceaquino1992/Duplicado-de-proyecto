@@ -1,0 +1,78 @@
+.contacto {
+  background-color: #464545;
+}
+.contacto .section-contacto {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  max-width: 1366px;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background-image: url(../img/fondo2-degradado.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+}
+.contacto .section-contacto div .titulo-contacto {
+  color: #ffffff;
+  font-size: 24px;
+}
+.contacto .section-contacto div .content-form {
+  display: flex;
+  width: 450px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.4117647059);
+  padding: 30px;
+}
+.contacto .section-contacto div .content-form input,
+.contacto .section-contacto div .content-form .caja-texto {
+  width: 100%;
+  font-size: 14px;
+  margin: 5px;
+  padding: 5px;
+}
+.contacto .section-contacto div .content-form .caja-texto {
+  height: 250px;
+}
+.contacto .section-contacto .content-mapa-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.contacto .section-contacto .content-mapa-redes .mapa-contacto h3 span {
+  color: #ffffff;
+  font-size: 24px;
+}
+.contacto .section-contacto .content-mapa-redes .mapa-contacto .mapa-pie {
+  width: 100%;
+  height: 80%;
+}
+.contacto .section-contacto div h3 {
+  color: #ffffff;
+  font-size: 24px;
+}
+.contacto .section-contacto div .redes-contacto {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+.contacto .section-contacto div .redes-contacto .content-redes {
+  display: flex;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+.contacto .section-contacto div .redes-contacto .content-redes a i {
+  color: #e9ce9f;
+  font-size: 2em;
+}

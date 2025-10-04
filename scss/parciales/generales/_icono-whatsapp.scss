@@ -1,0 +1,17 @@
+.icon-whatsapp {
+  display: flex;
+  position: fixed;
+  margin-left: 90%;
+  margin-top: 30%;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.61);
+}
+.icon-whatsapp a .fa-whatsapp {
+  color: #0cdb2f;
+  font-size: 50px;
+}

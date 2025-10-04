@@ -1,6 +1,5 @@
-@use 'generales';
-@use './parciales/index/footer';
-@use './parciales/index/header';
-@use './parciales/index/seccion-secundaria';
-@use './parciales/index/section-hero';
-@use './parciales/nosotros/main-nosotros';
+@use './parciales/home';
+@use './parciales/generales/icono-whatsapp';
+@use './parciales/generales/header';
+@use './parciales/generales/footer';
+@use './parciales/contacto';

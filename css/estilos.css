@@ -1,13 +1,163 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Poppins, sans-serif;
+.home {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #464545;
 }
 
-main .icon-whatsapp {
+.home .section-hero {
+  display: flex;
+  max-width: 1366px;
+  width: 100%;
+  padding: 60px;
+  background-image: url(../img/fondo.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.home .section-hero .content-hero {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.514);
+  width: 500px;
+  height: 350px;
+  margin: 20px;
+  padding: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.home .section-hero .content-hero h1 {
+  font-size: 32px;
+}
+
+.home .section-hero .content-hero p,
+.home .section-hero .content-hero a {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.home .section-hero .content-hero a {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: black;
+  font-weight: 700;
+}
+
+.home .section-hero .content-hero a:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.home .section-hero .content-logo {
+  width: 30%;
+  height: 30%;
+}
+
+.home .section-hero .content-logo .logo {
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.home .carrusel {
+  max-width: 1366px;
+}
+
+.home .section-secundaria {
+  display: flex;
+  max-width: 1366px;
+  width: 100%;
+  padding: 30px;
+  background-image: url(../img/salon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .section-secundaria div {
+  width: 50%;
+  text-align: center;
+}
+
+.home .section-secundaria div h2,
+.home .section-secundaria div span {
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.home .section-secundaria div h2 span,
+.home .section-secundaria div span span {
+  font-weight: 200;
+}
+
+.home .section-secundaria div p {
+  color: #ffffff;
+}
+
+.home .section-secundaria .content-servicios {
+  display: flex;
+  width: 80%;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.home .section-secundaria .content-servicios .nuestros-servicios {
+  display: flex;
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.514);
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.home .section-secundaria .content-servicios .nuestros-servicios img {
+  width: 100%;
+}
+
+.home .section-secundaria .content-servicios .nuestros-servicios h3,
+.home .section-secundaria .content-servicios .nuestros-servicios a {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.home .section-secundaria .content-servicios .nuestros-servicios a {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: black;
+  font-weight: 700;
+}
+
+.home .section-secundaria .content-servicios .nuestros-servicios a:hover {
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #000000;
+}
+
+.icon-whatsapp {
   display: flex;
   position: fixed;
   margin-left: 90%;
@@ -21,9 +171,47 @@ main .icon-whatsapp {
   background-color: rgba(255, 255, 255, 0.61);
 }
 
-main .icon-whatsapp a .fa-whatsapp {
+.icon-whatsapp a .fa-whatsapp {
   color: #0cdb2f;
   font-size: 50px;
+}
+
+header .navbar {
+  background-color: #000000 !important;
+}
+
+header .navbar li a {
+  color: #e9ce9f;
+  font-weight: 600;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+header .navbar li a:hover {
+  color: #000000;
+  background-color: #e9ce9f;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+header .navbar .dropdown-menu {
+  padding: 10px 10px;
+  background-color: #000000;
+}
+
+header .navbar .dropdown-menu .dropdown-item {
+  margin: 0px;
+}
+
+header .navbar .navbar-toggler {
+  color: #e9ce9f;
+}
+
+header nav .logo-marca {
+  width: 80px;
+  height: 80px;
 }
 
 .pie-pagina {
@@ -92,203 +280,95 @@ main .icon-whatsapp a .fa-whatsapp {
   border-bottom: 2px solid #e9ce9f;
 }
 
-header .navbar {
-  background-color: #000000 !important;
+.contacto {
+  background-color: #464545;
 }
 
-.navbar-nav li a {
-  color: #e9ce9f;
-  font-weight: 600;
-  font-size: 1em;
-  text-transform: uppercase;
-  margin: 3px;
-  border-radius: 10px;
-}
-
-.navbar-nav li a:hover {
-  color: #000000;
-  background-color: #e9ce9f;
-  border-radius: 10px;
-  transition: all 0.5s;
-}
-
-.navbar .dropdown-menu {
-  padding: 10px 10px;
-  background-color: #000000;
-}
-
-.navbar .dropdown-menu .dropdown-item {
-  margin: 0px;
-}
-
-header nav .logo-marca {
-  width: 80px;
-  height: 80px;
-}
-
-.navbar .navbar-toggler {
-  color: #e9ce9f;
-}
-
-.section-secundaria {
+.contacto .section-contacto {
   display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  max-width: 1366px;
   width: 100%;
+  height: 100vh;
+  align-items: center;
+  background-image: url(../img/fondo2-degradado.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 30px;
-  background-image: url(../img/salon.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  text-align: center;
+}
+
+.contacto .section-contacto div .titulo-contacto {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.contacto .section-contacto div .content-form {
+  display: flex;
+  width: 450px;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-}
-
-.section-secundaria div {
-  width: 50%;
-  text-align: center;
-}
-
-.section-secundaria div h2 {
-  font-size: 50px;
-  color: #ffffff;
-}
-
-.section-secundaria div h2 span {
-  font-weight: 200;
-}
-
-.section-secundaria div p {
-  color: #ffffff;
-}
-
-.section-secundaria .content-servicios {
-  display: flex;
-  width: 80%;
-  align-content: center;
   justify-content: space-evenly;
-  flex-flow: row wrap;
+  background-color: rgba(255, 255, 255, 0.4117647059);
+  padding: 30px;
 }
 
-.section-secundaria .content-servicios .nuestros-servicios {
-  display: flex;
-  width: 300px;
-  height: auto;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.514);
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-}
-
-.section-secundaria .content-servicios .nuestros-servicios img {
+.contacto .section-contacto div .content-form input,
+.contacto .section-contacto div .content-form .caja-texto {
   width: 100%;
-}
-
-.section-secundaria .content-servicios .nuestros-servicios h3,
-.section-secundaria .content-servicios .nuestros-servicios a {
-  margin: 10px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #000000;
-}
-
-.section-secundaria .content-servicios .nuestros-servicios a {
-  text-decoration: none;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 5px 10px;
-}
-
-.section-secundaria .content-servicios .nuestros-servicios a:hover {
-  color: #ffffff;
-  font-weight: 600;
-  background-color: #000000;
-}
-
-.section-hero {
-  display: flex;
-  width: 100%;
-  padding: 60px;
-  background-image: url(../img/fondo.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: space-around;
-  flex-flow: row wrap;
-  align-items: center;
-}
-
-.section-hero .content-hero {
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.514);
-  width: 500px;
-  height: 350px;
-  margin: 20px;
-  padding: 20px;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  text-align: center;
-}
-
-.section-hero .content-hero p {
-  font-weight: 600;
-  font-size: 1em;
-}
-
-.section-hero .content-hero a {
-  width: 160px;
-  color: #000000;
-  font-weight: 600;
-  font-size: 1em;
-  border: 1px solid black;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 5px;
-  border-radius: 20px;
-}
-
-.section-hero .content-hero a:hover {
-  color: #ffffff;
-  background-color: #000000;
-}
-
-.section-hero .content-logo {
-  width: 30%;
-  height: 30%;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.section-hero .content-logo .logo {
-  width: 100%;
-  border: 1px solid black;
-}
-
-.nosotros {
-  display: flex;
-  justify-content: center;
-  background-image: url("../img/fondo2-degradado.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.nosotros .container-nosotros {
-  display: flex;
-  width: 80%;
-  padding: 20px;
-  margin: 20px;
-  background-color: rgba(255, 255, 255, 0.514);
-}
-
-.nosotros .container-nosotros p {
-  padding: 20px;
   font-size: 14px;
-  color: #000;
+  margin: 5px;
+  padding: 5px;
+}
+
+.contacto .section-contacto div .content-form .caja-texto {
+  height: 250px;
+}
+
+.contacto .section-contacto .content-mapa-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.contacto .section-contacto .content-mapa-redes .mapa-contacto h3 span {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.contacto .section-contacto .content-mapa-redes .mapa-contacto .mapa-pie {
+  width: 100%;
+  height: 80%;
+}
+
+.contacto .section-contacto div h3 {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.contacto .section-contacto div .redes-contacto {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+
+.contacto .section-contacto div .redes-contacto .content-redes {
+  display: flex;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.contacto .section-contacto div .redes-contacto .content-redes a i {
+  color: #e9ce9f;
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=estilos.css.map */
