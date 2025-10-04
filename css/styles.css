@@ -425,9 +425,11 @@ td {
     width: 360px;
     height: 150px;
 }
-.servicios .responsive-350 div{
+
+.servicios .responsive-350 div {
     padding: 10px 20px;
 }
+
 .servicios .responsive-350 div h2 {
     font-size: 32px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -895,17 +897,4 @@ td {
         display: inline-block;
         background-color: #ffffff;
     }
-
-    .servicios .responsive-350 div {
-        margin-bottom: 30px;
-    }
-
-    /* .servicios .responsive-350 div .img-responsive-350 {
-        display: block;
-        background-image: url('../img/mani-service-2-bg.jpg');
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-    } */
 }
