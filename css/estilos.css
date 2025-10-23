@@ -7,7 +7,7 @@
   background-color: #464545;
 }
 
-.home .section-hero {
+.home > section:first-child {
   display: flex;
   max-width: 1366px;
   width: 100%;
@@ -20,8 +20,7 @@
   flex-flow: row wrap;
   align-items: center;
 }
-
-.home .section-hero .content-hero {
+.home > section:first-child > div:first-child {
   display: flex;
   background-color: rgba(255, 255, 255, 0.514);
   width: 500px;
@@ -33,48 +32,29 @@
   align-items: center;
   text-align: center;
 }
-
-.home .section-hero .content-hero h1 {
-  font-size: 32px;
+@media (max-width: 350px) {
+  .home > section:first-child > div:first-child {
+    width: 90%;
+    padding: 20px;
+  }
+  .home > section:first-child > div:first-child h1 {
+    font-size: 18px;
+  }
+  .home > section:first-child > div:first-child p {
+    font-size: 12px;
+  }
+  .home > section:first-child > div:first-child a {
+    width: auto;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
 }
-
-.home .section-hero .content-hero p,
-.home .section-hero .content-hero a {
-  font-weight: 600;
-  font-size: 1em;
+@media (max-width: 350px) {
+  .home > section:first-child {
+    padding: 0;
+  }
 }
-
-.home .section-hero .content-hero a {
-  text-decoration: none;
-  text-transform: uppercase;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 5px 10px;
-  color: black;
-  font-weight: 700;
-}
-
-.home .section-hero .content-hero a:hover {
-  color: #ffffff;
-  background-color: #000000;
-}
-
-.home .section-hero .content-logo {
-  width: 30%;
-  height: 30%;
-}
-
-.home .section-hero .content-logo .logo {
-  width: 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-}
-
-.home .carrusel {
-  max-width: 1366px;
-}
-
-.home .section-secundaria {
+.home #servicios {
   display: flex;
   max-width: 1366px;
   width: 100%;
@@ -87,36 +67,28 @@
   justify-content: space-between;
   align-items: center;
 }
-
-.home .section-secundaria div {
+.home #servicios > div:first-child {
   width: 50%;
   text-align: center;
 }
-
-.home .section-secundaria div h2,
-.home .section-secundaria div span {
+.home #servicios > div:first-child h2 {
   font-size: 50px;
   color: #ffffff;
 }
-
-.home .section-secundaria div h2 span,
-.home .section-secundaria div span span {
+.home #servicios > div:first-child h2 span {
   font-weight: 200;
 }
-
-.home .section-secundaria div p {
+.home #servicios > div:first-child p {
   color: #ffffff;
 }
-
-.home .section-secundaria .content-servicios {
+.home #servicios .service-grid {
   display: flex;
   width: 80%;
   align-content: center;
   justify-content: space-evenly;
   flex-flow: row wrap;
 }
-
-.home .section-secundaria .content-servicios .nuestros-servicios {
+.home #servicios .service-grid .service-card {
   display: flex;
   width: 300px;
   height: auto;
@@ -128,634 +100,140 @@
   align-items: center;
   text-align: center;
 }
-
-.home .section-secundaria .content-servicios .nuestros-servicios img {
+.home #servicios .service-grid .service-card img {
   width: 100%;
 }
-
-.home .section-secundaria .content-servicios .nuestros-servicios h3,
-.home .section-secundaria .content-servicios .nuestros-servicios a {
+.home #servicios .service-grid .service-card h3,
+.home #servicios .service-grid .service-card a {
   margin: 10px;
   font-size: 20px;
   font-weight: 600;
   color: #000000;
 }
-
-.home .section-secundaria .content-servicios .nuestros-servicios p {
-  color: black;
+.home #servicios .service-grid .service-card p {
+  color: #000000;
   font-weight: 600;
-  font-size: 16px;
 }
-
-.home .section-secundaria .content-servicios .nuestros-servicios a {
+.home #servicios .service-grid .service-card a {
   text-decoration: none;
-  text-transform: uppercase;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 20px;
   padding: 5px 10px;
-  color: black;
-  font-weight: 700;
+  transition: all 0.3s ease;
 }
-
-.home .section-secundaria .content-servicios .nuestros-servicios a:hover {
+.home #servicios .service-grid .service-card a:hover {
   color: #ffffff;
   font-weight: 600;
   background-color: #000000;
 }
-
-.icon-whatsapp {
-  display: flex;
-  position: fixed;
-  margin-left: 90%;
-  margin-top: 30%;
-  width: 5em;
-  height: 5em;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.61);
+@media (max-width: 350px) {
+  .home #servicios .service-grid .service-card {
+    width: 100%;
+  }
+  .home #servicios .service-grid .service-card h3, .home #servicios .service-grid .service-card a {
+    font-size: 14px;
+  }
+  .home #servicios .service-grid .service-card a {
+    padding: 3px 5px;
+  }
+}
+@media (max-width: 350px) {
+  .home #servicios {
+    padding: 10px;
+    background-image: none;
+    background-color: #464545;
+  }
+  .home #servicios > div:first-child {
+    width: 90%;
+  }
+  .home #servicios > div:first-child h2 {
+    font-size: 24px;
+  }
+  .home #servicios > div:first-child p {
+    font-size: 12px;
+  }
+  .home #servicios .service-grid {
+    width: 90%;
+  }
 }
 
-.icon-whatsapp a .fa-whatsapp {
-  color: #0cdb2f;
-  font-size: 50px;
-}
-
-header .navbar {
-  background-color: #000000 !important;
-}
-
-header .navbar li a {
-  color: #e9ce9f;
-  font-weight: 600;
-  font-size: 1em;
-  text-transform: uppercase;
-  margin: 3px;
-  border-radius: 10px;
-}
-
-header .navbar li a:hover {
-  color: #000000;
-  background-color: #e9ce9f;
-  border-radius: 10px;
-  transition: all 0.5s;
-}
-
-header .navbar .dropdown-menu {
-  padding: 10px 10px;
-  background-color: #000000;
-}
-
-header .navbar .dropdown-menu .dropdown-item {
-  margin: 0px;
-}
-
-header .navbar .navbar-toggler {
-  color: #e9ce9f;
-}
-
-header nav .logo-marca {
-  width: 80px;
-  height: 80px;
-}
-
-.pie-pagina {
+.main-footer {
   display: grid;
   width: 100%;
   background-color: #000000;
-  color: #e9ce9f;
+  color: #ffffff;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   justify-content: space-evenly;
 }
-
-.pie-pagina .content-icon {
+.main-footer > div:nth-child(1) {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 30px;
 }
-
-.pie-pagina .content-icon a span {
-  font-size: 28px;
-  color: #e9ce9f;
+.main-footer > div:nth-child(1) a {
+  text-decoration: none;
 }
-
-.pie-pagina .content-central {
+.main-footer > div:nth-child(1) a span {
+  font-size: 28px;
+  color: #ffffff;
+}
+.main-footer > div:nth-child(2) {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: end;
+  justify-content: flex-end;
   text-align: center;
 }
-
-.pie-pagina .content-central p {
+.main-footer > div:nth-child(2) p, .main-footer > div:nth-child(2) .fa-copyright {
   font-size: 12px;
-  color: #e9ce9f;
+  color: #ffffff;
 }
-
-.pie-pagina .content-central p .fa-copyright {
-  font-size: 12px;
-  color: #e9ce9f;
-}
-
-.pie-pagina .content-menu {
+.main-footer > div:nth-child(3) {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
 }
-
-.pie-pagina .content-menu ul {
-  border-left: 2px solid #e9ce9f;
+.main-footer > div:nth-child(3) ul {
+  border-left: 2px solid #ffffff;
   padding: 20px;
   list-style: none;
 }
-
-.pie-pagina .content-menu ul li {
+.main-footer > div:nth-child(3) ul li {
   padding: 3px;
 }
-
-.pie-pagina .content-menu ul li a {
+.main-footer > div:nth-child(3) ul li a {
   text-decoration: none;
   font-weight: 600;
-  color: #e9ce9f;
+  color: #ffffff;
   text-transform: uppercase;
 }
-
-.pie-pagina .content-menu ul li a:hover {
-  border-bottom: 2px solid #e9ce9f;
+.main-footer > div:nth-child(3) ul li a:hover {
+  border-bottom: 2px solid #ffffff;
 }
-
-.contacto {
-  background-color: #464545;
-}
-
-.contacto .section-contacto {
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-around;
-  max-width: 1366px;
-  width: 100%;
-  height: 100vh;
-  align-items: center;
-  background-image: url(../img/fondo2-degradado.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 30px;
-  text-align: center;
-}
-
-.contacto .section-contacto div .titulo-contacto {
-  color: #ffffff;
-  font-size: 24px;
-}
-
-.contacto .section-contacto div .content-form {
-  display: flex;
-  width: 450px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: rgba(255, 255, 255, 0.4117647059);
-  padding: 30px;
-}
-
-.contacto .section-contacto div .content-form input,
-.contacto .section-contacto div .content-form .caja-texto {
-  width: 100%;
-  font-size: 14px;
-  margin: 5px;
-  padding: 5px;
-}
-
-.contacto .section-contacto div .content-form .caja-texto {
-  height: 250px;
-}
-
-.contacto .section-contacto .content-mapa-redes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-}
-
-.contacto .section-contacto .content-mapa-redes .mapa-contacto h3 span {
-  color: #ffffff;
-  font-size: 24px;
-}
-
-.contacto .section-contacto .content-mapa-redes .mapa-contacto .mapa-pie {
-  width: 100%;
-  height: 80%;
-}
-
-.contacto .section-contacto div h3 {
-  color: #ffffff;
-  font-size: 24px;
-}
-
-.contacto .section-contacto div .redes-contacto {
-  display: flex;
-  width: 100%;
-  margin-top: 20px;
-  justify-content: space-evenly;
-}
-
-.contacto .section-contacto div .redes-contacto .content-redes {
-  display: flex;
-  width: 4em;
-  height: 4em;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.24);
-}
-
-.contacto .section-contacto div .redes-contacto .content-redes a i {
-  color: #e9ce9f;
-  font-size: 2em;
-}
-
-@media screen and (max-width: 450px) {
-  .icon-whatsapp {
-    width: 60px;
-    height: 60px;
-    margin-left: 80%;
-    margin-top: 20%;
-  }
-  .icon-whatsapp .fa-whatsapp {
-    font-size: 2.5em;
-  }
-  /* HOME */
-  .home .section-hero {
-    padding: 0px;
-  }
-  .home .section-hero .content-hero {
-    width: 90%;
-  }
-  .home .section-hero .content-hero h1 {
-    font-size: 24px;
-  }
-  .home .section-hero .content-hero p {
-    font-size: 12px;
-  }
-  .home .section-hero .content-hero a {
-    width: auto;
-    font-size: 12px;
-    padding: 5px 10px;
-  }
-  .home .section-secundaria {
-    padding: 10px;
-    background-image: none;
-    background-color: #464545;
-  }
-  .home .section-secundaria div {
-    width: 90%;
-    text-align: center;
-  }
-  .home .section-secundaria div h2,
-  span {
-    font-size: 24px;
-  }
-  .home .section-secundaria div p {
-    font-size: 12px;
-  }
-  .home .section-secundaria .content-servicios {
-    width: 90%;
-  }
-  .home .section-secundaria .content-servicios .nuestros-servicios {
-    width: 100%;
-  }
-  .home .section-secundaria .content-servicios .nuestros-servicios h3,
-  a {
-    font-size: 14px;
-  }
-  .home .section-secundaria .content-servicios .nuestros-servicios a {
-    padding: 3px 5px;
-  }
-  /* FOOTER */
-  .pie-pagina {
+@media (max-width: 350px) {
+  .main-footer {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
     justify-content: space-evenly;
   }
-  .pie-pagina .content-icon {
+  .main-footer > div:nth-child(1) {
     padding: 20px;
   }
-  .pie-pagina .content-icon a span {
+  .main-footer > div:nth-child(1) a span {
     font-size: 20px;
   }
-  .content-central .fa-copyright {
-    font-size: 12px;
-  }
-  .pie-pagina .content-menu {
+  .main-footer > div:nth-child(3) {
     grid-row: 2/3;
   }
-  .content-menu ul {
+  .main-footer > div:nth-child(3) ul {
     padding: 10px;
   }
-  .content-menu ul li {
-    padding: 0px;
+  .main-footer > div:nth-child(3) ul li {
+    padding: 0;
   }
-  .content-menu ul li a {
+  .main-footer > div:nth-child(3) ul li a {
     font-size: 12px;
-  }
-  /* NOSOTROS */
-  .nosotros section {
-    height: 100%;
-    padding: 20px;
-  }
-  .nosotros section div {
-    width: 100%;
-    flex-direction: column;
-  }
-  .nosotros section div p {
-    padding: 10px;
-    font-size: 12px;
-  }
-  /* CONTACTO */
-  .contacto .section-contacto {
-    height: 100%;
-    padding: 20px;
-    flex-direction: column;
-  }
-  .section-contacto .titulo-contacto {
-    font-size: 18px;
-  }
-  .content-form {
-    width: 310px;
-    padding: 20px;
-  }
-  .content-form input,
-  .caja-texto {
-    font-size: 12px;
-    margin: 3px;
-    padding: 3px;
-  }
-  .content-form .caja-texto {
-    height: 100px;
-  }
-  .content-mapa-redes {
-    width: 100%;
-  }
-  .content-mapa-redes div h3,
-  .mapa-contacto h3 span {
-    color: #ffffff;
-    font-size: 18px;
-  }
-  .content-redes {
-    width: 3em;
-    height: 3em;
-  }
-  .content-redes i {
-    font-size: 24px;
-  }
-  /* CURSOS */
-  .content-info {
-    flex-direction: column;
-  }
-  .content-info img {
-    width: 100%;
-  }
-  .content-info div {
-    margin: 0px;
-  }
-  .content-info h2 {
-    font-size: 18px;
-  }
-  .content-info p {
-    padding: 10px;
-    font-size: 14px;
-  }
-  .content-icon-curso {
-    text-align: center;
-    margin: 3px;
-  }
-  .content-icon-curso i {
-    font-size: 14px;
-  }
-  .content-icon-curso h4 {
-    font-size: 10px;
-  }
-  .content-curso .content-temas {
-    flex-direction: column;
-    margin-top: 10px;
-  }
-  .content-temas h3 {
-    font-size: 18px;
-  }
-  .content-temas ul li {
-    font-size: 14px;
-  }
-  .content-temas div:nth-last-child(1) {
-    margin: 0px;
-  }
-  .content-temas div .form-curso {
-    width: 70%;
-    height: 300px;
-    margin: auto;
-    padding: 20px;
-  }
-  /* SERVICIOS */
-  .servicios .content-tabla {
-    display: none;
-  }
-  .servicios .responsive-350 {
-    display: inline-block;
-    background-color: #ffffff;
-  }
-}
-@media screen and (max-width: 350px) {
-  /* HOME */
-  .home .section-hero {
-    padding: 0px;
-  }
-  .home .section-hero .content-hero {
-    width: 90%;
-  }
-  .section-hero .content-hero h1 {
-    font-size: 18px;
-  }
-  .content-hero p {
-    font-size: 12px;
-  }
-  .content-hero a {
-    width: auto;
-    font-size: 12px;
-    padding: 5px 10px;
-  }
-  .home .section-secundaria {
-    padding: 10px;
-    background-image: none;
-    background-color: #464545;
-  }
-  .home .section-secundaria div {
-    width: 90%;
-    text-align: center;
-  }
-  .home .section-secundaria div h2,
-  span {
-    font-size: 24px;
-  }
-  .home .section-secundaria div p {
-    font-size: 12px;
-  }
-  .home .section-secundaria .content-servicios {
-    width: 90%;
-  }
-  .home .section-secundaria .content-servicios .nuestros-servicios {
-    width: 100%;
-  }
-  .home .section-secundaria .content-servicios .nuestros-servicios h3,
-  a {
-    font-size: 14px;
-  }
-  .home .section-secundaria .content-servicios .nuestros-servicios a {
-    padding: 3px 5px;
-  }
-  /* FOOTER */
-  .icon-whatsapp {
-    width: 60px;
-    height: 60px;
-    margin-left: 80%;
-    margin-top: 20%;
-  }
-  .icon-whatsapp .fa-whatsapp {
-    font-size: 2.5em;
-  }
-  .pie-pagina {
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-    justify-content: space-evenly;
-  }
-  .pie-pagina .content-icon {
-    padding: 20px;
-  }
-  .pie-pagina a span {
-    font-size: 20px;
-  }
-  .content-central .fa-copyright {
-    font-size: 12px;
-  }
-  .pie-pagina .content-menu {
-    grid-row: 2/3;
-  }
-  .content-menu ul {
-    padding: 10px;
-  }
-  .content-menu ul li {
-    padding: 0px;
-  }
-  .content-menu ul li a {
-    font-size: 12px;
-  }
-  /* NOSOTROS */
-  .nosotros section {
-    height: 100%;
-    padding: 20px;
-  }
-  .nosotros section div {
-    width: 100%;
-    flex-direction: column;
-  }
-  .nosotros section div p {
-    padding: 10px;
-    font-size: 12px;
-  }
-  /* CONTACTO */
-  .contacto .section-contacto {
-    height: 100%;
-    padding: 20px;
-    flex-direction: column;
-  }
-  .section-contacto .titulo-contacto {
-    font-size: 18px;
-  }
-  .content-form {
-    width: 310px;
-    padding: 20px;
-  }
-  .content-form input,
-  .caja-texto {
-    font-size: 12px;
-    margin: 3px;
-    padding: 3px;
-  }
-  .content-form .caja-texto {
-    height: 100px;
-  }
-  .content-mapa-redes {
-    width: 100%;
-  }
-  .content-mapa-redes div h3,
-  .mapa-contacto h3 span {
-    color: #ffffff;
-    font-size: 18px;
-  }
-  .content-redes {
-    width: 3em;
-    height: 3em;
-  }
-  .content-redes i {
-    font-size: 24px;
-  }
-  /* CURSOS */
-  .content-info {
-    flex-direction: column;
-  }
-  .content-info img {
-    width: 100%;
-  }
-  .content-info div {
-    margin: 0px;
-  }
-  .content-info h2 {
-    font-size: 18px;
-  }
-  .content-info p {
-    padding: 10px;
-    font-size: 14px;
-  }
-  .content-icon-curso {
-    text-align: center;
-    margin: 3px;
-  }
-  .content-icon-curso i {
-    font-size: 14px;
-  }
-  .content-icon-curso h4 {
-    font-size: 10px;
-  }
-  .content-curso .content-temas {
-    flex-direction: column;
-    margin-top: 10px;
-  }
-  .content-temas h3 {
-    font-size: 18px;
-  }
-  .content-temas ul li {
-    font-size: 14px;
-  }
-  .content-temas div:nth-last-child(1) {
-    margin: 0px;
-  }
-  .content-temas div .form-curso {
-    width: 70%;
-    height: 300px;
-    margin: auto;
-    padding: 20px;
-  }
-  /* SERVICIOS */
-  .servicios .content-tabla {
-    display: none;
-  }
-  .servicios .responsive-350 {
-    display: inline-block;
-    background-color: #ffffff;
-  }
-  .servicios .responsive-350 div:nth-child(odd) {
-    background-color: rgba(70, 69, 69, 0.3647058824);
   }
 }
 

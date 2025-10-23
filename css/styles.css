@@ -78,7 +78,7 @@ header nav .logo-marca {
 
 /* COMIENZO DE SECTION HERO */
 
-.home .section-hero {
+.home section:first-child {
     display: flex;
     max-width: 1366px;
     width: 100%;
@@ -92,7 +92,7 @@ header nav .logo-marca {
     align-items: center;
 }
 
-.home .section-hero .content-hero {
+.home section div:nth-child(1) {
     display: flex;
     background-color: rgba(255, 255, 255, 0.514);
     width: 500px;
@@ -105,17 +105,17 @@ header nav .logo-marca {
     text-align: center;
 }
 
-.section-hero .content-hero h1 {
+section div:nth-child(1) h1 {
     font-size: 32px;
 }
 
-.content-hero p,
+div:nth-child(1) p,
 a {
     font-weight: 600;
     font-size: 1em;
 }
 
-.content-hero a {
+div:nth-child(1) a {
     width: 160px;
     color: #000000;
     border: 1px solid black;
@@ -126,17 +126,17 @@ a {
     border-radius: 20px;
 }
 
-.content-hero a:hover {
+div:nth-child(1) a:hover {
     color: #ffffff;
     background-color: #000000;
 }
 
-.content-logo {
+div:nth-child(2) {
     width: 30%;
     height: 30%;
 }
 
-.content-logo .logo {
+div:nth-child(2) .logo {
     width: 100%;
     border-radius: 50%;
     border: 1px solid black;
@@ -238,7 +238,7 @@ a {
 
 /* COMIENDO DEL PIE DE PAGINA */
 
-.pie-pagina {
+.main-footer {
     display: grid;
     width: 100%;
     background-color: #000000;
@@ -248,59 +248,54 @@ a {
     justify-content: space-evenly;
 }
 
-.pie-pagina .content-icon {
+.main-footer div:nth-child(1) {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 30px;
 }
 
-.pie-pagina a span {
+.main-footer a span {
     font-size: 28px;
     color: #e9ce9f;
 }
 
-.pie-pagina .content-central {
+.main-footer div:nth-child(2) {
     display: flex;
     flex-direction: column-reverse;
     justify-content: end;
     text-align: center;
 }
 
-.content-central p {
+.main-footer div:nth-child(2) p, .fa-copyright {
     font-size: 12px;
     color: #e9ce9f;
 }
 
-.content-central .fa-copyright {
-    font-size: 12px;
-    color: #e9ce9f;
-}
-
-.pie-pagina .content-menu {
+.main-footer div:nth-child(3) {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
 }
 
-.content-menu ul {
+.main-footer div:nth-child(3) ul {
     border-left: 2px solid #e9ce9f;
     padding: 20px;
     list-style: none;
 }
 
-.content-menu ul li {
+.main-footer div:nth-child(3) ul li {
     padding: 3px;
 }
 
-.content-menu ul li a {
+.main-footer div:nth-child(3) ul li a {
     text-decoration: none;
     font-weight: 600;
     color: #e9ce9f;
     text-transform: uppercase;
 }
 
-.content-menu ul li a:hover {
+.main-footer div:nth-child(3) ul li a:hover {
     border-bottom: 2px solid #e9ce9f;
 }
 

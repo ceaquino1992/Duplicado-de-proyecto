@@ -1,0 +1,120 @@
+@use '../base/variables' as v;
+@use '../utils/mixins' as m;
+
+.home {
+
+    > section:first-child {
+        display: flex;
+        max-width: 1366px;
+        width: 100%;
+        padding: v.$padding-hero;
+        background-image: url(../img/fondo.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        align-items: center;
+
+        > div:first-child {
+            display: flex;
+            background-color: v.$color-fondo-transparente;
+            width: 500px;
+            height: 350px;
+            margin: 20px;
+            padding: 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            
+            @include m.mobile {
+                width: 90%;
+                padding: v.$padding-base;
+
+                h1 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 12px;
+                }
+                a {
+                    width: auto;
+                    font-size: 12px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+
+        @include m.mobile {
+            padding: 0; 
+        }
+    }
+
+    #servicios {
+        display: flex;
+        max-width: 1366px;
+        width: 100%;
+        padding: v.$padding-seccion;
+        background-image: url(../img/salon.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        >div:first-child {
+            width: 50%;
+            text-align: center;
+
+            h2 {
+                font-size: v.$font-size-servicios-titulo;
+                color: v.$color-texto-claro;
+
+                span {
+                    font-weight: v.$font-weight-titulo-light;
+                }
+            }
+
+            p {
+                color: v.$color-texto-claro;
+            }
+        }
+
+        .service-grid {
+            display: flex;
+            width: 80%;
+            align-content: center;
+            justify-content: space-evenly;
+            flex-flow: row wrap;
+
+            .service-card {
+               @include m.tarjeta-servicio;
+            }
+        }
+
+        @include m.mobile{
+            padding: 10px;
+            background-image: none;
+            background-color: v.$color-principal;
+
+            >div:first-child{
+                width: 90%;
+                h2{
+                    font-size: 24px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+
+            .service-grid{
+                width: 90%;
+            }
+        }
+    }
+}
+
+
+    

@@ -1,6 +1,18 @@
-@use './parciales/home';
-@use './parciales/generales/icono-whatsapp';
-@use './parciales/generales/header';
-@use './parciales/generales/footer';
-@use './parciales/contacto';
-@use './media-query/media-query';
+// Utilidades y configuracion base
+@use 'base/variables';
+@use 'base/breakpoints';
+@use 'utils/mixins';
+
+// Layout y estructura general
+
+@use 'layout/main';
+
+@use 'pages/index';
+
+@use 'layout/footer';
+
+// scss/pages/_home.scss
+
+// 1. IMPORTACIONES
+@use 'base/variables' as v;
+@use 'utils/mixins' as m;    

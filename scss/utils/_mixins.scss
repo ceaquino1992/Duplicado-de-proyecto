@@ -1,0 +1,71 @@
+@use '../base/breakpoints' as bp;
+@use '../base/variables' as v;
+
+@mixin mobile{
+    @media (max-width: bp.$bp-mobile){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (max-width: bp.$bp-tablet){
+        @content;
+    }
+}
+
+@mixin tarjeta-servicio {
+    // Estilos de ESCRITORIO
+    display: flex;
+    width: v.$width-card;
+    height: auto;
+    padding: v.$padding-base;
+    margin-bottom: v.$margin-card;
+    background-color: v.$color-tarjeta-fondo;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    
+    // Elementos internos
+    img {
+        width: 100%;
+    }
+
+    h3,
+    a {
+        margin: 10px;
+        font-size: v.$font-size-card-text;
+        font-weight: v.$font-weight-bold;
+        color: v.$color-texto-oscuro;
+    }
+    
+    p {
+        color: v.$color-texto-oscuro;
+        font-weight: v.$font-weight-bold;
+    }
+
+    a {
+        text-decoration: none;
+        border: 1px solid v.$color-texto-oscuro;
+        border-radius: v.$border-radius-button;
+        padding: 5px 10px;
+        transition: all v.$transition-default;
+
+        &:hover { 
+            color: v.$color-texto-claro;
+            font-weight: v.$font-weight-bold;
+            background-color: v.$color-texto-oscuro;
+        }
+    }
+    
+    // ESTILOS RESPONSIVOS ANIDADOS (Usando el Mixin de Punto de Ruptura)
+    @include mobile { 
+        width: 100%; 
+        h3, a {
+            font-size: 14px;
+        }
+        a {
+            padding: 3px 5px;
+        }
+    }
+}

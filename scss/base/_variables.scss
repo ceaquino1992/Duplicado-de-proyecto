@@ -1,0 +1,41 @@
+// Colores
+$color-principal: #464545;        // Color de fondo del main
+$color-secundario: #000000;     // Negro para borde/texto
+$color-acento: #ffffff;         // Blanco para hover
+$color-fondo-transparente: rgba(255, 255, 255, 0.514); // Fondo del content-hero
+
+// Tipografía
+$font-weight-bold: 600;
+$font-size-base: 1em;
+$font-size-titulo: 32px;
+
+// Espaciado y Dimensiones
+$padding-hero: 60px;
+$margin-base: 20px;
+$padding-base: 20px;
+$width-content-hero: 500px;
+$height-content-hero: 350px;
+$border-radius-button: 20px;
+
+// Transiciones
+$transition-default: 0.3s ease;
+
+// Colores de Servicios
+$color-tarjeta-fondo: rgba(255, 255, 255, 0.514); 
+$color-texto-claro: #ffffff;
+$color-texto-oscuro: #000000;
+
+// Tipografía de Servicios
+$font-weight-titulo-light: 200;
+$font-size-servicios-titulo: 50px;
+$font-size-card-text: 20px;
+
+// Dimensiones de Servicios
+$padding-seccion: 30px;
+$margin-card: 20px;
+$width-card: 300px;
+
+// Footer
+$font-size-pequeño: 12px;
+$font-size-icon: 28px;
+$padding-grande: 30px;
